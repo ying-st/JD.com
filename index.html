@@ -1,0 +1,2821 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>仿京东详情页</title>
+		<link rel="stylesheet" href="css/master.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/jd.css"/>
+		<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+  </style>  
+	</head>
+	<body>
+		   
+		<div class="header">
+			<!--顶部导航-->
+			<div class="top-nav nav-left nav-lyt">
+				<!--导航：地点-左-->
+				<ul class="tn-left-1">
+					<!--下拉菜单-->					
+					<li class="tn-left-1-dropdown">
+						<div class="left-1">
+							<span class="left-1-address" title="北京">送至：北京&nbsp;<s class="tri">∨</s></span>
+						</div>
+						<div></div>
+					</li>	
+					<!--地址-->
+					<div class="addr-next-1">
+							<ul>
+								<li><a href="">北京</a></li>
+								<li><a href="">上海</a></li>
+								<li><a href="">武汉</a></li>
+								<li><a href="">广州</a></li>
+								<li><a href="">深圳</a></li>
+							</ul>
+							<ul>
+								<li><a href="">惠州</a></li>
+								<li><a href="">湛江</a></li>
+								<li><a href="">海口</a></li>
+								<li><a href="">珠江</a></li>
+								<li><a href="">北海</a></li>
+							</ul>
+						</div>
+				</ul>
+				<!--导航：个人-右-spacer为小竖条的类-->
+				<ul class="tn-right-1 nav-right">
+					<li class="tnr1">
+						<a href="" class="login">你好，请登录</a>
+						<a href="" class="register">免费注册</a>
+					</li>
+					<li class="spacer"></li>
+					<li class="tnr2">
+						<a href="">我的订单</a>
+					</li>
+					<li class="spacer"></li>
+					<!--我的京东-->
+					
+					<li class="tnr3">
+						<ul class="myjd">
+							<li>
+								<div>我的京东</div>
+								<s class="tri">∨</s>
+							</li>	
+							<!--我的京东下拉框-->
+							<div class="myjd-dropdown">
+								<ul class="myjd-dd myjd-dd1" style="li:hover{background:#F1F1F1 ;}">
+									<li><a href="">待处理订单</a></li>
+									<li><a href="">消息</a></li>
+									<br />
+									<li><a href="">返修退换货</a></li>
+									<li><a href="">我的问答</a></li>
+									<br />
+								</ul>
+								<ul class="myjd-dd myjd-dd-border">
+									
+									<li><a href="">我的京豆&nbsp;</a></li>
+									<li><a href="">我的优惠券</a></li>
+								</ul>
+							</div>
+						</ul>
+					</li>
+					<li class="spacer"></li>
+					<li class="tnr4">
+						<a href="">京东会员</a>
+					</li>
+					<li class="spacer"></li>
+					<li class="tnr5">
+						<a href="">企业采购</a>
+					</li>
+					<li class="spacer"></li>
+					<li class="tnr6">
+						<div class="mobile-jd">
+							<ul>
+								<i class="mobile-jd-icon" ></i>
+								<a href="">手机京东</a>
+								<s class="tri">∨</s>
+							</ul>
+						</div>
+						<!--<a href="">手机京东</a>-->
+					</li>
+					<li class="spacer"></li>
+					<li class="tnr7">
+						<a href="">关注京东</a>
+					</li>
+					<li class="spacer"></li>
+					<li class="tnr8">
+						<a href="">客户服务</a>
+					</li>
+					<li class="spacer"></li>
+					<li class="tnr9">
+						<a href="">网站导航</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<!--顶部导航-->
+			
+			<!--头部中间搜索部分-->
+			<div class="jy-style">
+				<div class="search-middle">
+				<div class="middle">
+					<div class="logo-2017">
+						<a href="#" class="logo"></a>
+					</div>
+						<!-- 搜索栏	-->	
+				  <div class="search">
+				    <div class="form">
+							<input type="text"  placeholder=" 华为畅享6S" onfocus="if(placeholder==' 华为畅享6S') {placeholder=''}" onblur="if (placeholder=='') {placeholder=' 华为畅享6S'}" class="text"/>
+							<button onclick="key" class="button-icon"><i></i>搜索</button>
+						</div>
+					</div>
+			
+		
+					    <!-- 购物车	-->	
+					<div class="dropdown">
+							<div class="shopcar-icon">
+								<div class="shopcar-left"></div>
+								    <a target="_blank" href="#" class="txt">我的购物车</a>
+								<div class="shopcar-right">&gt;</div>
+									    
+								<div class="shopcar-count">0</div> 
+							</div>
+					    
+					    <div class="dropdown-layer">     	
+							<div class="prompt">
+							    <div class="nogoods">
+							     	<b></b>
+							     	购物车中还没有商品，赶紧选购吧！
+							    </div>
+							</div>
+						</div>
+						<div class="spacer"></div>
+					</div>
+					
+					    <!-- 热搜词	-->		
+					<div class="hotwords">
+							<a target="_blank" href="#">手机5折</a>
+							<a target="_blank" href="#">新机专场</a>
+							<a target="_blank" href="#">X9星空灰</a>
+							<a target="_blank" href="#">乐S3</a>
+							<a target="_blank" href="#">R9s Plus黑色</a>
+							<a target="_blank" href="#">联想ZUK Edge</a>
+							<a target="_blank" href="#">低至199</a>
+						</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+				<!--头部中间搜索部分-->
+				<!--三级菜单-->
+				<div class="yy-style">
+					<div class="nav">
+					 	<div class="w">
+						 <div class="w-spacer"></div>	
+		    		 <!--左 -->
+				 		 <div class="categorys">
+				 			 <!--商品盒子-->
+		        	 <div class="allbtn">
+		            	<a href="#">全部商品分类</a>
+		              <i class="ci-right"><s class="dot"><img src="img/imgs/dot.jpg"/></s></i><!--小下拉箭头 -->
+		              <div class="clear"></div>
+		            </div>
+		            
+		       	   <!--中间盒子-->
+		        	 <div class="goods">
+		            <div class="next">
+		              <div class="next-inner">
+		              	<div class="item fore1" data-index="1">
+		              		<h3><a href="#" target="_blank">家用电器</a></h3>
+		              		<i>&gt;</i>
+		              	</div>
+		              	<div class="item fore2" data-index="2">
+		              		<h3><a href="#" target="_blank">手机、运营商、数码</a></h3>
+		              		<i>&gt;</i>
+		              	</div>
+		              	<div class="item fore3" data-index="3">
+		              		<h3><a href="#" target="_blank">电脑办公</a></h3>
+		              		<i>&gt;</i>
+		              	</div>
+		              	<div class="item fore4" data-index="4">
+		              		<h3><a href="#" target="_blank">家具、家居、家装</a></h3>
+		              		<i>&gt;</i>
+		              	</div>
+		              	<div class="item fore5" data-index="5">
+		              		<h3><a href="#" target="_blank">清洁、护肤、宠物</a></h3>
+		              		<i>&gt;</i>
+		              	</div>
+		              	<div class="item fore6" data-index="6">
+		              		<h3><a href="#" target="_blank">男装、女装、童装</a></h3>
+		              		<i>&gt;</i>
+		              	</div>
+		              	<div class="item fore7" data-index="7">
+		              		<h3><a href="#" target="_blank">汽车、汽车用品</a></h3>
+		              		<i>&gt;</i>
+		              	</div>
+		              	<div class="item fore8" data-index="8">
+		              		<h3><a href="#" target="_blank">母婴、玩具乐器</a></h3>
+		              		<i>&gt;</i>
+		              	</div>
+		              	
+		              </div>
+		            </div>
+		            <!--最右边盒子-->
+		            <div class="right">
+		            	<div class="item-sub" id="category-item-1" >
+		            		<div class="item-brands">
+		            			<div class="brands-inner">
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands1.jpg"></a>
+		            			    <a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands2.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands3.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands4.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands5.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands6.jpg" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands7.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands8.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            			</div>
+		            		</div>
+		                    <div class="item-channels">
+		                    	<div class="channels">
+		                    		<a href="#" target="_blank">家电城<i>&gt;</i></a>
+		            				<a href="#" target="_blank">品牌日<i>&gt;</i></a>
+		            				<a href="#" target="_blank">智能生活馆<i>&gt;</i></a>
+		            				<a href="#" target="_blank">京东净化馆<i>&gt;</i></a>
+		            				<a href="#" target="_blank">京东帮服务店<i>&gt;</i></a>
+		            				<a href="#" target="_blank">家电众筹馆<i>&gt;</i></a>
+		                    	</div>
+		                    </div>
+		            		<div class="subitems" >
+		            			<dl class="fore1">
+		            			  <dt>
+		            			  	<a href="#" target="_blank">电视<i>&gt;</i></a>
+		            			  </dt>
+		            			  <dd>
+		            			  	<a href="#" target="_blank">合资品牌</a>
+		            			  	<a href="#" target="_blank">国产品牌</a>
+		            			  	<a href="#" target="_blank">互联网品牌</a>
+		            			  </dd>
+		            			</dl>
+		            			<dl class="fore2">
+		            				<dt>
+		            				  <a href="#">空调<i>&gt;</i></a></dt>
+		            				<dd>
+		            				  <a href="#" target="_blank">壁挂式空调</a>
+		            				  <a href="#" target="_blank">柜式空调</a>
+		            				  <a href="#" target="_blank">中央空调</a>
+		            				  <a href="#" target="_blank">空调配件</a>
+		            				</dd>
+		            			</dl>
+		            			<dl class="fore3">
+		            				<dt>
+		            					<a href="#" target="_blank">洗衣机<i>&gt;</i></a>
+		            				</dt>
+		            				<dd>
+		            					<a href="#" target="_blank">滚筒洗衣机</a>
+		            					<a href="#" target="_blank">洗烘一体机</a>
+		            					<a href="#" target="_blank">波轮洗衣机</a>
+		            					<a href="#" target="_blank">迷你洗衣机</a>
+		            					<a href="#" target="_blank">洗衣机配件</a>
+		            				</dd>
+		            			</dl>
+		            			<dl class="fore4">
+		            				<dt>
+		            					<a href="#" target="_blank">冰箱<i>&gt;</i></a>
+		            				</dt>
+		            				<dd>
+		            					<a href="#" target="_blank">对开门</a>
+		            					<a href="#" target="_blank">三门</a>
+		            					<a href="#" target="_blank">双门</a>
+		            					<a href="//list.jd.com/list.html?cat=737,794,12392" target="_blank">冷柜/冰吧</a>
+		            					<a href="//list.jd.com/list.html?cat=737,794,12401" target="_blank">酒柜</a><a href="//list.jd.com/list.html?cat=737,794,877&amp;ev=2664_88743&amp;trans=1&amp;JL=2_1_0#J_crumbsBar" target="_blank">冰箱配件</a>
+		            				</dd>
+		            			</dl>
+		            			<dl class="fore5">
+		            				<dt>
+		            					<a href="#" target="_blank">厨卫大电<i>&gt;</i></a>
+		            				</dt>
+		            				<dd>
+		            					<a href="#" target="_blank">油烟机</a>
+		            					<a href="#" target="_blank">燃气灶</a>
+		            					<a href="#" target="_blank">烟灶套装</a>
+		            					<a href="#" target="_blank">消毒柜</a>
+		            					<a href="#" target="_blank">洗碗机</a>
+		            					<a href="#" target="_blank">电热水器</a>
+		            					<a href="#" target="_blank">燃气热水器</a>
+		            					<a href="#" target="_blank">嵌入式厨电</a>
+		            				</dd>
+		            			</dl>
+		            		</div>
+		            		<div class="item-promotions" >
+		            			<a href="#" class="img-link" target="_blank">
+		            				<img src=" img/imgs/promotion1.jpg" width="168" height="134"></a>
+		            			<a href="#" class="img-link" target="_blank">
+		            			    <img src=" img/imgs/promotion2.jpg"  width="168" height="134"></a>
+		            		</div>
+		            	</div>
+		            	<div class="item-sub" id="category-item-2">
+		            		<div class="item-brands">
+		            			<div class="brands-inner">
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands1-1.jpg"></a>
+		            			    <a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands1-2.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands1-3.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands1-4.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands1-5.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands1-6.jpg" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands1-7.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            				<a href="#" class="img-link" target="_blank"><img src=" img/imgs/brands1-8.jpg" data-lazy-img="done" width="83" height="35"></a>
+		            			</div>
+		            		</div>
+		                    <div class="item-channels">
+		                    	<div class="channels">
+		                    		<a href="#" target="_blank">手机频道<i>&gt;</i></a>
+		            				<a href="#" target="_blank">网上营业厅<i>&gt;</i></a>
+		            				<a href="#" target="_blank">配购选购中心<i>&gt;</i></a>
+		            				<a href="#" target="_blank">影像Club<i>&gt;</i></a>
+		            				<a href="#" target="_blank">以旧换新<i>&gt;</i></a>
+		            				<a href="#" target="_blank">众筹馆<i>&gt;</i></a>
+		                    	</div>
+		                    </div>
+		            		<div class="subitems" >
+		            			<dl class="fore1">
+		            			  <dt>
+		            			  	<a href="#" target="_blank">手机通讯<i>&gt;</i></a>
+		            			  </dt>
+		            			  <dd>
+		            			  	<a href="#" target="_blank">运营商</a>
+		            			  	<a href="#" target="_blank">手机配像</a>
+		            			  	<a href="#" target="_blank">摄影摄像</a>
+		            			  	<a href="#" target="_blank">数码摄像</a>
+		            			  </dd>
+		            			</dl>
+		            			<dl class="fore2">
+		            				<dt>
+		            				  <a href="#">空调<i>&gt;</i></a></dt>
+		            				<dd>
+		            				  <a href="#" target="_blank">壁挂式空调</a>
+		            				  <a href="#" target="_blank">柜式空调</a>
+		            				  <a href="#" target="_blank">中央空调</a>
+		            				  <a href="#" target="_blank">空调配件</a>
+		            				</dd>
+		            			</dl>
+		            			<dl class="fore3">
+		            				<dt>
+		            					<a href="#" target="_blank">洗衣机<i>&gt;</i></a>
+		            				</dt>
+		            				<dd>
+		            					<a href="#" target="_blank">滚筒洗衣机</a>
+		            					<a href="#" target="_blank">洗烘一体机</a>
+		            					<a href="#" target="_blank">波轮洗衣机</a>
+		            					<a href="#" target="_blank">迷你洗衣机</a>
+		            					<a href="#" target="_blank">洗衣机配件</a>
+		            				</dd>
+		            			</dl>
+		            			<dl class="fore4">
+		            				<dt>
+		            					<a href="#" target="_blank">冰箱<i>&gt;</i></a>
+		            				</dt>
+		            				<dd>
+		            					<a href="#" target="_blank">对开门</a>
+		            					<a href="#" target="_blank">三门</a>
+		            					<a href="#" target="_blank">双门</a>
+		            					<a href="//list.jd.com/list.html?cat=737,794,12392" target="_blank">冷柜/冰吧</a>
+		            					<a href="//list.jd.com/list.html?cat=737,794,12401" target="_blank">酒柜</a><a href="//list.jd.com/list.html?cat=737,794,877&amp;ev=2664_88743&amp;trans=1&amp;JL=2_1_0#J_crumbsBar" target="_blank">冰箱配件</a>
+		            				</dd>
+		            			</dl>
+		            			<dl class="fore5">
+		            				<dt>
+		            					<a href="#" target="_blank">厨卫大电<i>&gt;</i></a>
+		            				</dt>
+		            				<dd>
+		            					<a href="#" target="_blank">油烟机</a>
+		            					<a href="#" target="_blank">燃气灶</a>
+		            					<a href="#" target="_blank">烟灶套装</a>
+		            					<a href="#" target="_blank">消毒柜</a>
+		            					<a href="#" target="_blank">洗碗机</a>
+		            					<a href="#" target="_blank">电热水器</a>
+		            					<a href="#" target="_blank">燃气热水器</a>
+		            					<a href="#" target="_blank">嵌入式厨电</a>
+		            				</dd>
+		            			</dl>
+		            		</div>
+		            		<div class="item-promotions" >
+		            			<a href="#" class="img-link" target="_blank">
+		            				<img src=" img/imgs/promotion1-1.jpg" width="168" height="134"></a>
+		            			<a href="#" class="img-link" target="_blank">
+		            			    <img src=" img/imgs/promotion1-2.jpg"  width="168" height="134"></a>
+		            		</div>
+		            	</div>	
+		                <div class="item-sub" id="category-item-3">
+		                	<h1 style=" text-align:center;color: #B1191A;">电脑办公</h1>
+		                    <div class="item-brands">
+		                    	<img src=" img/imgs/item-sub1.png">
+		                    </div>
+		                </div>
+		                <div class="item-sub" id="category-item-4">
+		                	<h1 style=" text-align:center;color: #B1191A;">家具、家居、家装</h1>
+		                    <div class="item-brands">
+		                    	<img src=" img/imgs/item-sub1.png">
+		                    </div>
+		                </div>
+		                <div class="item-sub" id="category-item-5">
+		                	<h1 style=" text-align:center;color: #B1191A;">清洁、护肤、宠物</h1>
+		                    <div class="item-brands">
+		                    	<img src=" img/imgs/item-sub2.png">
+		                    </div>
+		                </div>
+		                <div class="item-sub" id="category-item-6">
+		                	<h1 style=" text-align:center;color: #B1191A;">男装、女装、童装</h1>
+		                    <div class="item-brands">
+		                    	<img src=" img/imgs/item-sub3.png">
+		                    </div>
+		                </div>
+		                <div class="item-sub" id="category-item-7">
+		                	<h1 style=" text-align:center;color: #B1191A;">汽车、汽车用品</h1>
+		                    <div class="item-brands">
+		                    	<img src=" img/imgs/item-sub4.png">
+		                    </div>
+		                </div>
+		                <div class="item-sub" id="category-item-8">
+		                	<h1 style=" text-align:center;color: #B1191A;">母婴、玩具乐器</h1>
+		                    <div class="item-brands">
+		                    	<img src=" img/imgs/item-sub5.png">
+		                    </div>
+		                </div>
+		       
+		            </div>
+		            </div>
+		         	<div class="clear"></div>
+				 		 </div>         	
+		     <!--右 -->
+				 <div class="navitems" style="padding-left: 210px; background-color:#FFFFFF;">
+				 	<ul id="navitems-group">
+				 		<li><a href="#">首页</a></li>
+				 		<li><a href="#">手机首页</a></li>
+				 		<li><a href="#">网上营业厅</a></li>
+				 		<li><a href="#">怎么挑</a></li>
+				 		<li><a href="#">新机发布</a></li>
+				 	</ul>
+		         
+		         
+			   </div> 	
+			 </div>
+	 		</div>
+	 		
+	 	</div>
+				<!--三级菜单-->
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--头部导航结束-->
+		<!--产品列-->
+		<div class="pro-lyt">
+			<div class="pro-nav nav-lyt">
+			<!--导航：产品分类-左-->
+				<div class="nav-left2">
+				<div class="pd">手机</div>
+				<div class="right-arrow">></div>
+				<div class="pd">手机通讯</div>
+				<div class="right-arrow">></div>
+				<div class="pd">手机</div>
+				<div class="right-arrow">></div>
+				<div class="pd">
+					<span class="apple">Apple<s class="tri">∨</s></span>
+					
+				</div>
+				<div class="right-arrow">></div>
+				<div class="pd">手机</div>
+				
+			</div>
+			<!--导航：右-店铺部分功能-->
+				<div class="nav-right">
+				<div class="pd">
+					<a href="" class="st">京东Apple产品专营店</a>
+					<span>京东自营</span>
+				</div>
+				<div class="pd">
+					<div class="gys-st">
+						<i class="gys"></i>
+						<a href="" class="st">联系供应商</a>
+					</div>
+				</div>
+				<div class="pd">
+					<div class="jimi-st">
+						<i class="jimi"></i>
+						<a href="" class="st">JIMI</a>
+					</div>
+				</div>
+				<div class="pd">
+					<div class="gz-store-st">
+						<i class="gz-store"></i>
+						<a href="" class="st">关注店铺</a>
+					</div>
+				</div>
+			</div>
+				<div class="clear"></div>
+			</div>
+		</div>				
+		<!--产品列-->
+		
+		<div class="content">
+			<!--商品展示、选择区-->
+			<div class="product">
+				<!--商品图片展示-->
+				<div class="pro-show">
+					<div class="jy-style">
+
+						<!-- 放大镜 -->
+						<div class="preview">
+							<div class="mid-images">
+						    <img src="img/images/m1.jpg" width="450" height="450" class="midimg"/>
+						    <div style="display:none;" id="winSelector"></div>
+						    <i></i>
+							</div>						                
+						    <!--小图片轮播   -->         
+						  <div class="small-images">
+						    <div class="left-slider"></div>
+				        <div class="smallimg-slider">
+			            <ul>
+			            <li class="fir"><img src="img/images/s1.jpg" width="54" height="54" /></li>
+			            <li><img src="img/images/s2.jpg" width="54" height="54" /></li>
+			            <li><img src="img/images/s3.jpg" width="54" height="54" /></li>
+			            <li><img src="img/images/s4.jpg" width="54" height="54" /></li>
+			            <li><img src="img/images/s5.jpg" width="54" height="54" /></li>
+			            <li><img src="img/images/s1.jpg" width="54" height="54" /></li>
+			            <li><img src="img/images/s2.jpg" width="54" height="54" /></li>
+			            </ul>
+				        </div>
+						    <div class="right-slider"></div>							
+								<!--小图片轮播结束-->	
+							<!--放大镜窗口-->
+							<div id="bigView" style="display:none;"><img width="800" height="800" alt="" src="" /></div>
+								
+								<!--分享图标   -->
+						    <div class="preview-info">
+						    	<div class="left-btns">
+						    		<div class="concern">
+							    		<a href="#">
+				                <div class="heart-jy"></div>
+				                &nbsp;关注
+					            </a>
+				            </div>
+						           
+				           	<div class="concern">
+							    		<a href="#">
+				                <div class="share"></div>
+				                &nbsp;分享
+				            	</a>
+				          	 </div>
+						           
+						        <div class="concern">
+						    		<a href="#">
+						                <div class="compare"></div>
+						                &nbsp;对比
+						            </a>
+						           </div>
+						    	</div>						    	
+						    	<div class="right-btns">
+						    		<a href="#">举报</a>
+						    	</div>
+						    </div>						    
+						</div>
+            	<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<!--商品类型、价格、信息-->
+				<div class="pro-price">
+					<div class="pro-name">Apple iPhone 7 (A1660) 128G 银色 移动联通电信4G手机</div>
+					<!--产品优惠消息-->	
+					<div class="pro-news">推荐选择下方的移动、联通、电信优惠购，套餐有优惠，还有话费返还。</div>
+					<div class="year-goods"><img src="img/product/year-goods.png"/></div>
+					<!--商品价格概要-->					
+					<div class="summary-price">
+						<!--京东价-->
+						<div class="jd-price">
+							<div class="summary-left">京 东 价</div>
+							<!--降价通知-->
+							<div class="summary-right">
+								<span class="money-symbol">￥</span>
+								<span class="jd-price-num">5899.00</span>
+								<a href="" class="cut-price">降价通知</a>
+							</div>
+							<!--评价数-->
+							<div class="comment-count">
+								<div class="calculate-comment">累计评价</div>
+								<a href="" class="comment-num">3.7万+</a>
+							</div>
+						</div>						
+						<!--领券-->
+						<div class="jd-Lquan">
+							<div class="summary-left">领&nbsp;&nbsp;券</div>
+							<!--领券图-->
+							<a href="" title="仅可购买iPhone自营部分商品商品 有效期2017-01-01至2017-01-26">
+								<span class="Lquan-logo">
+										<s class="wavy"></s>
+										<span class="full-cut">满5199减200</span>
+										<s class="wavy"></s>									
+									</span>
+							</a>
+							</div>
+						<!--促销-->
+						<div class="jd-sale">
+							<div class="summary-left pro-sale">促&nbsp;&nbsp;销</div>
+							<div class="summary-right-active">
+								<div class="active-top">
+									<span>加价购</span>
+									<em>满100.00另加15.00元，或满200.00另加25.00元，或满300.00另加45.00元，即可在购物车换购热销商品</em>
+									<a href="">&nbsp;&nbsp;详情>></a>
+								</div>
+								<div class="active-bottom">
+									<span>满额返券</span>
+									<em>买IPhone即送春运机票超值礼包</em>
+									<a href="">&nbsp;&nbsp;详情>></a>
+								</div>								
+							</div>						
+							<!--jd-sale-->
+						</div>						
+						<div class="clear"></div>
+					</div>					
+					<!--商品选择-->
+					<div class="pro-choose">
+						<!--支持服务-->
+						<div class="summary-support">
+							<div class="summary-left">支&nbsp;&nbsp;持</div>
+							<div>
+								<ul class="support-package">
+									<li class="old-new sp-two">
+										<i></i>
+										<a href="" title="免费提供旧机回收服务，完成回收服务后可获得京东E卡或京东钱包现金再次用于京东消费。">
+											<span>以旧换新，闲置手机回收</span>
+										</a>
+									</li>
+									<li class="package-4G sp-two">
+										<i></i>
+										<a href="" title="告别营业厅排队等待，在线变更套餐更快捷更方便。还可享受赠话费、赠流量活动，点击查看详情。">
+											<span>4G套餐，18元起</span>										
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--货品配送-->
+						<div class="summary-stock">
+							<div class="summary-left">配 送 至</div>
+							<!--货品详情-->
+							<div class="summary-stock-right">
+								<div class="stock-top">
+									<!--目的地址-->
+									<div class="stock-address">										
+										<em class="sto-addr-text">北京朝阳区三环以内</em>
+										<s class="tri">∨</s>
+										<div class="stock-addr-dropdown">											
+										</div>
+										<strong>有货</strong>
+										<em>支持</em>
+									</div>
+									<!--付款、取货-->
+									<div class="stock-pay-take">
+										<ul>
+											<div class="stock-pay-take-top">
+												<a class="line-right" href="">99元免基础运费(10kg内)</a>											
+												<a class="line-right">货到付款</a>											
+												<a href="">京准达</a>
+												<s class="tri">∨</s>
+											</div>
+											<div class="pay-take-dropdown" style="position: ;">
+												<a class="line-right" href="">211限时达</a>											
+												<a href="">自提</a>
+											</div>
+										</ul>											
+									</div>									
+								</div>
+								<div class="stock-bottom-information">
+									由 京东 发货，并提供售后服务。23:00前完成下单,预计明天(01月09日)送达
+								</div>	
+							</div>							
+						</div>
+						<!--重量-->
+						<div class="stock-weight">
+							<div class="summary-left">重&nbsp;&nbsp;量</div>
+							<div class="summary-stock-right">0.39kg</div>
+						</div>
+						<!--款式选择-->	
+						<div class="choose-phone choose-top">		
+							<!--颜色-->
+							<div class="choose-color">
+								<div class="summary-left left-text">选择颜色</div>
+								<div class="pic-color">
+									<div class="pic-phone right-choose-box">
+										<a href="">
+											<img src="img/product/jinse.jpg" alt="金色" title="金色"/>
+											<span>金色</span>
+										</a>
+										<a href="">
+											<img src="img/product/MGjinse.jpg" alt="玫瑰金色" title="玫瑰金色"/>
+											<span>玫瑰金色</span>
+										</a>
+										<a href="">
+											<img src="img/product/yinse.jpg" alt="银色" title="银色"/>
+											<span>银色</span>
+										</a>
+										<a href="">
+											<img src="img/product/black.jpg" alt="黑色" title="黑色"/>
+											<span>黑色</span>
+										</a>
+										<a href="">
+											<img src="img/product/liangheise.jpg" alt="亮黑色" title="亮黑色"/>
+											<span>亮黑色</span>
+										</a>
+									
+									</div>
+									</div>
+									
+							</div>
+							
+						
+							<!--容量-->
+							<div class="choose-capacity">
+								<div class="summary-left left-text">选择容量</div>
+								<div class="right-choose-box capacity-box">
+									<a href="" title="32GB"><span>32GB</span></a>
+									<a href="" title="128GB"><span>128GB</span></a>
+									<a href="" title="256GB"><span>256GB</span></a>
+									
+								</div>
+									
+							</div>
+						
+						</div>
+						<!--购买方式-->
+						<div class="buy-type choose-top">
+							<div class="summary-left left-text">购买方式</div>
+							<div class="right-choose-box buy-choose-box">
+								<a href="" title="官方标配"><span>官方标配</span></a>
+								<a href="" title="联通优惠购"><span>联通优惠购</span></a>
+								<a href="" title="移动优惠购"><span>移动优惠购</span></a>
+								<a href="" title="电信优惠购"><span>电信优惠购</span></a>
+							
+							</div>
+						</div>
+						<!--套装-->
+						<div class="choose-suit choose-top">
+							<div class="summary-left left-text">套&nbsp;&nbsp;装</div>
+							<!--与buy-choose-box适用相同样式-->
+							<div class="right-choose-box  buy-choose-box">
+								<a href=""><span>保护套装</span></a>
+								<a href=""><span>保护套装</span></a>
+								<a href=""><span>保护套装</span></a>
+								<a href=""><span>充电套装</span></a>
+								<a href=""><span>原装套装</span></a>
+								<a href=""><span>支架套装</span></a>
+							
+							</div>
+						</div>
+						<!--增值服务-->
+						<div class="choose-service choose-top">
+							<div class="summary-left left-text">增值服务</div>
+							<div class="right-choose-box  buy-choose-box">
+								<a href="">
+									<img src="img/product/baozhi-cu.png" alt="" />
+									<span>保值回收</span>
+									<span>￥299</span>
+									<s class="tri">∨</s>
+								</a>
+								<a href="">
+									<img src="img/product/baozhi-chang.png" alt="" />
+									<span>厂保延1年</span>
+									<span>￥259</span>
+									<s class="tri">∨</s>
+								</a>
+								<a href="">
+									<img src="img/product/baozhi-wu.png" alt="" />
+									<span>无理由2年</span>
+									<span>￥1449</span>
+									<s class="tri">∨</s>
+								</a>							
+								<i class="question"></i>
+							</div>
+						</div>
+						<!--白条分期-->
+						<div class="baitiao choose-top">
+							<div class="summary-left left-text">白条分期</div>
+							<div class="right-choose-box  buy-choose-box">
+								<a href=""><span>30天免息</span></a>
+								<a href=""><span>￥1995.83*3期</span></a>
+								<a href=""><span>￥1012.66*6期</span></a>
+								<a href=""><span>￥521.08*12期</span></a>
+								<a href=""><span>￥275.33*24期</span></a>
+								<span class="youhui"></span>
+								<i class="question"></i>
+								<i></i>
+							</div>
+							
+						</div>
+					</div>
+					<!--选择板块-以上-->
+					<!--加入购物车-->
+					<div class="buy-btn">
+						<div class="left-text">
+							
+							<input id="number" class="number" value="1" />
+							<div class="plus-reduce">
+								<a  id="plus" class="buy-num-plus buy-num-btn" href="#none">+</a>
+								<a  id="reduce" class="buy-num-reduce buy-num-btn disabl" href="#none">-</a>
+							</div>
+							<a href="" class="btn-logo">加入购物车</a>
+						</div>
+					</div>
+					<!--本地活动-->
+					<div class="local-active">
+						<div class="summary-left left-text">本地活动</div>
+						<div><a href="">·10元抢1GB流量 >></a></div>
+					</div>
+					<!--温馨提示-->
+					<div class="tips">
+						<div class="summary-left ">温馨提示</div>
+						<span>·支持7天无理由退货</span>
+						
+					</div>
+				</div>				
+				<div class="clear"></div>
+			</div>			
+			<div class="clear"></div>
+			<!--商品展示、选择区-->
+		</div>
+			<!--配件，轮播，Tab切换-->	
+			<div class="jy-style">
+
+<div class="fittings">
+	<div class="po-nav">
+	<ul class="tabs">
+		<li class="popularity">人气配件</li>
+		<li>手机贴膜</li>
+		<li>手机保护套</li>
+		<li>数据线</li>
+		<li>充电器</li>
+		<li>移动电源</li>
+		<li>手机支架</li>
+	</ul>
+	
+	<div class="more">
+		<a href="#" target="_blank">更多配件 <c>&gt;&gt;</c></a>
+	</div>
+	
+	</div>
+
+
+	<div class="tabs_con">
+		<div class="hide podiv">
+			<div class="mainphone">
+				<div class="main-img">
+				    <a href="#" target="_blank">
+                        <img src="img/images/mainphone.jpg" width="100" height="100" >
+                        <i class="plus">+</i>
+                    </a>
+				</div>
+				
+				<div class="main-name">
+					<a href="#" target="_blank">Apple iPhone 7 (A1660) 128G 黑色 移动联通电信4G手机</a>
+				</div>
+			</div>
+			
+			<!--轮播-->
+			<div class="main-slider">
+				<div class="m-left-slider"></div>
+		        <div class="m-slider">
+		            <ul>
+		            <li class="first">
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main1.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">络亚 iPhone7/6s钢化膜保护膜/抗蓝光玻璃膜 适用于苹果7/6S/plus (苹果6/7通用)4.7英寸-抗蓝光膜-非全屏</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥15.80</label>
+		            	</div>
+		            </li>
+		            
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main2.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">亿色(ESR) iPhone7手机壳 苹果7手机壳/手机套 硅胶防摔轻薄软壳 初色零感系列 啫喱白</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥19.90</label>
+		            	</div>
+		            </li>
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main3.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">蜂翼（wings of bees）USB苹果充电线 手机数据线 适用iPhone se/5s/6/6s/Plus iPad Air 土豪金 1米</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥7.90</label>
+		            	</div>
+		            </li>
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main4.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">苹果原装数据线iPhone6s/6Plus/5SE/iPadpro/手机USB线充电线 iPhone数据线单条</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥63.00</label>
+		            	</div>
+		            </li>
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main5.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">罗马仕（ROMOSS）sense6P LED数显屏 移动电源/充电宝 20000毫安 白色 苹果/安卓/手机/平板通用</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥109.00</label>
+		            	</div>
+		            </li>
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main6.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">MaxMco 懒人支架 床头手机支架 ZJ02白色</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥9.90</label>
+		            	</div>
+		            </li>
+		            </ul>
+		        </div>
+                <div class="m-right-slider"></div>
+			</div>
+			
+			<!----轮播结束----->
+			
+			<div class="group">
+			<i class="equal">=</i>
+			
+			<div class="selected">
+				已选择 0 个配件
+			</div>
+			
+			<div class="group-price">
+				组合价
+				<strong>￥5899.00</strong>
+			</div>
+			
+			<div class="nowbuy">
+				立即购买
+			</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="hide">
+            <div class="mainphone">
+				<div class="main-img">
+				    <a href="#" target="_blank">
+                        <img src="img/images/mainphone.jpg" width="100" height="100" >
+                        <i class="plus">+</i>
+                    </a>
+				</div>
+				
+				<div class="main-name">
+					<a href="#" target="_blank">Apple iPhone 7 (A1660) 128G 黑色 移动联通电信4G手机</a>
+				</div>
+			</div>
+			
+			<div class="main-slider">
+				<div class="m-left-slider"></div>
+		        <div class="m-slider">
+		            <ul>
+		            <li class="first">
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main1.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">络亚 iPhone7/6s钢化膜保护膜/抗蓝光玻璃膜 适用于苹果7/6S/plus (苹果6/7通用)4.7英寸-抗蓝光膜-非全屏</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥15.80</label>
+		            	</div>
+		            </li>
+		            
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main2.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">亿色(ESR) iPhone7手机壳 苹果7手机壳/手机套 硅胶防摔轻薄软壳 初色零感系列 啫喱白</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥19.90</label>
+		            	</div>
+		            </li>
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main1.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">络亚 iPhone7/6s钢化膜保护膜/抗蓝光玻璃膜 适用于苹果7/6S/plus (苹果6/7通用)4.7英寸-抗蓝光膜-非全屏</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥15.80</label>
+		            	</div>
+		            </li>
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main2.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">亿色(ESR) iPhone7手机壳 苹果7手机壳/手机套 硅胶防摔轻薄软壳 初色零感系列 啫喱白</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥19.90</label>
+		            	</div>
+		            </li>
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main1.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">络亚 iPhone7/6s钢化膜保护膜/抗蓝光玻璃膜 适用于苹果7/6S/plus (苹果6/7通用)4.7英寸-抗蓝光膜-非全屏</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥15.80</label>
+		            	</div>
+		            </li>
+		            <li>
+		            	<div class="m-img">
+		            		<a href="#" target="_blank"><img width="100" height="100" src="img/images/main2.jpg"></a>
+		            	</div>
+		            	<div class="m-name">
+		            		<a href="#" target="_blank">亿色(ESR) iPhone7手机壳 苹果7手机壳/手机套 硅胶防摔轻薄软壳 初色零感系列 啫喱白</a>
+		            	</div>
+		            	<div class="m-price">
+		            		<input type="checkbox" class="choose">            
+		            		<label class="fee">￥19.90</label>
+		            	</div>
+		            </li>
+		            </ul>
+		        </div>
+                <div class="m-right-slider"></div>
+			</div>
+			
+			<div class="group">
+			<i class="equal">=</i>
+			
+			<div class="selected">
+				已选择 0 个配件
+			</div>
+			
+			<div class="group-price">
+				组合价
+				<strong>￥5899.00</strong>
+			</div>
+			
+			<div class="nowbuy">
+				立即购买
+			</div>
+				
+			</div>			
+		</div>
+		
+		
+		<div class="hide">aaa</div>
+		<div class="hide">bbb</div>
+		<div class="hide">ccc</div>
+		<div class="hide">ddd</div>
+		<div class="hide">eee</div>
+		
+	</div>
+</div>
+</div>
+			<!--商品详情、评价区tab切换-->
+		  <div class="jy-style">
+				<!--中间商品介绍-->
+				<div class="producer">
+				<!--侧边栏-->
+				<div class="aside">
+					<!--banner-左-结束-->
+					  <div class="yy-style">
+							<div class="w">
+								<div class="aside-banner">
+							  <div class="fixedbox">
+								<div class="fbox-inner1">
+								  <div class="inner-l">
+						  	  	   <h3><a href="#">京东Apple产品专营店</a></h3>	
+						  	  	  </div>
+								  <div class="inner-r">
+				                    <a href="#"><i class="wrap-im"><img src="img/imgs/im.gif"></i></a>	
+						  	  	  </div>
+								</div>				
+								<div class="fbox-inner2">
+								  <div class="btns">
+						  	  		<a href="#" class="btn-def">
+						  	  		 <i class="enter"></i>
+						  	  		 <span>进店逛逛</span>	
+						  	  		</a>
+						  	  		<a href="#" class="btn-def">
+						  	  		 <i class="follow"></i>
+						  	  		 <span>关注店铺</span>
+						  	  		</a>
+						  	  	  </div>
+								</div>
+							  </div>
+							  <!--达人选购-->
+							  <div class="view-buy">
+							  	<div class="view-top">
+							  		<h3>达人选购</h3>
+							  	</div>
+							  	<div class="view-bottom">
+							  	  <ul class="plist">
+							  	  	<li class="p-1">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img1.jpg"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">Apple iPhone 7 Plus (A1661) 128G 黑色 移动联通电信4G手机</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥7188.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	
+							  	  	<li class="p-1">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img2.jpg"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">Apple iPhone 6s (A1700) 32G 玫瑰金色 移动联通电信4G手机</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥4299.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	
+							  	  	<li class="p-1">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img3.jpg"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">荣耀8 4GB+32GB 全网通4G手机 幻夜黑</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥2299.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	<li class="p-1">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img4.png"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">Apple iPhone 7（A1660 ）移动联通电信4G手机 黑色 32GB</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥5048.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	<li class="p-1">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img5.png"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">Apple iPhone SE (A1723) 64G 玫瑰金色 移动联通电信4G手机</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥3399.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	<li class="p-1">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img6.jpg"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">苹果 Apple iPhone7 4G手机 玫瑰金 全网通(128G)</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥5988.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  
+							  	  </ul>
+							  	</div>
+							  </div>
+							  <!--看了又看-->
+							  <div class="view-view">
+							  	<div class="view-top">
+							  		<h3>看了又看</h3>
+							  	</div>
+							  	<div class="view-bottom">
+							  	  <ul class="plist">
+							  	  	<li class="p-1">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img1.jpg"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">Apple iPhone 7 Plus (A1661) 128G 黑色 移动联通电信4G手机</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥7188.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	
+							  	  	<li class="p-2">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img2.jpg"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">Apple iPhone 6s (A1700) 32G 玫瑰金色 移动联通电信4G手机</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥4299.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	
+							  	  	<li class="p-3">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img3.jpg"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">荣耀8 4GB+32GB 全网通4G手机 幻夜黑</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥2299.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	
+							  	  	<li class="p-4">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img4.png"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">Apple iPhone 7（A1660 ）移动联通电信4G手机 黑色 32GB</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥5048.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	<li class="p-5">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img5.png"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">Apple iPhone SE (A1723) 64G 玫瑰金色 移动联通电信4G手机</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥3399.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	
+							  	  	<li class="p-6">
+							  	  		<div class="p-img">
+							  	  		  <a href="#"><img src="img/imgs/plist-img7.jpg"></a>
+							  	  		</div>
+							  	  		<div class="p-name">
+							  	  		  <a href="#">小米5 全网通 标准版 3GB内存 32GB ROM 白色 移动联通电信4G手机</a>
+							  	  		</div>
+							  	  	    <div class="p-price">
+							  	  	      <strong class="J-p-3133857">￥1599.00</strong>	
+							  	  	    </div>
+							  	  	</li>
+							  	  	
+							  	  	
+							  	  </ul>
+							  	  
+							  	</div>
+							  </div>
+							  <div class="rank">
+							  	<div class="rank-top">
+							  		<h3><a href="#">手机热销榜</a></h3>	
+							  	</div>
+							  	<!--tab切换 start-->
+							  	<div class="rank-bottom">			  		
+							  		  <ul id="tab" style="height: 30px;">
+										<li class="fli">同价位</li>
+										<li>同品牌</li>
+										<li>总排名</li>
+						              </ul>
+									  <div id="tab_con" style="height: 615px;">
+										<div id="item" class="fdiv">
+										  <ul class="rank-plist">
+										  	<li class="fore1">
+										  	  <div class="p_img">
+										  	  	<a href="#"><img src="img/imgs/rank-plist1.jpg" ></a>
+										  	  </div>
+										  	  <div class="p_name">
+										  	  	<a href="#" class="name" title="AppleiPhone7 Plus">AppleiPhone7 Plus</a>
+										  	  </div>
+										  	  <div class="p_price">
+										  	  	<strong>￥6388.00</strong>
+										  	  </div>
+										  	  <div class="p_num">1</div>
+										  	</li>
+										  	<li class="fore2">
+										  	  <div class="p_img">
+										  	  	<a href="#"><img src="img/imgs/rank-plist2.jpg" ></a>
+										  	  </div>
+										  	  <div class="p_name"><a href="#" class="name" title="AppleiPhone7">AppleiPhone7</a></div>
+										  	  <div class="p_price">
+										  	  	<strong>￥5199.00</strong>
+										  	  </div>
+										  	  <div class="p_num">2</div>
+										  	</li>
+										  	<li class="fore3">
+										  	  <div class="p_img">
+										  	  	<a href="#"><img src="img/imgs/rank-plist3.jpg" ></a>
+										  	  </div>
+										  	  <div class="p_name"><a href="#" class="name" title="APPLEiPhone6s">APPLEi  Phone6s</a></div>
+										  	  <div class="p_price">
+										  	  	<strong>￥3999.00</strong>
+										  	  </div>
+										  	  <div class="p_num">3</div>
+										  	</li>
+										  	<li class="fore4">
+										  	  <div class="p_img">
+										  	  	<a href="#"><img src="img/imgs/rank-plist4.jpg" ></a>
+										  	  </div>
+										  	  <div class="p_name"><a href="#" class="name" title="三星Galaxy S7(G9300)">三星Galaxy S7(G9300)</a></div>
+										  	  <div class="p_price">
+									  	  	<strong>￥3699.00</strong>
+										  	  </div>
+										  	  <div class="p_num">4</div>
+										  	</li>
+										  	<li class="fore5">
+										  	  <div class="p_img">
+										  	  	<a href="#"><img src="img/imgs/rank-plist5.jpg" ></a>
+										  	  </div>
+										  	  <div class="p_name"><a href="#" class="name" title="华为P9 PLUS">华为P9 PLUS</a></div>
+										  	  <div class="p_price">
+										  	  	<strong>￥3988.00</strong>
+										  	  </div>
+										  	  <div class="p_num">5</div>
+										  	</li>
+										  	<li class="fore6">
+										  	  <div class="p_img">
+										  	  	<a href="#"><img src="img/imgs/rank-plist6.jpg" ></a>
+										  	  </div>
+										  	  <div class="p_name"><a href="#" class="name" title="vivo Xplay6 全网通6GB+128GB 移动联通电信4G手机 双卡双待 香槟金">vivo Xplay6 全网通6GB+128GB</a></div>
+										  	  <div class="p_price">
+										  	  	<strong>￥4498.00</strong>
+										  	  </div>
+										  	  <div class="p_num">6</div>
+										  	</li>
+										  	
+										  	
+										  </ul>
+										</div>
+										<div id="item" style="display: none;">别看我！</div>
+										<div id="item" style="display: none;">都叫你别看了，后悔了吧！</div>
+									  </div>			  		  			  		  			  		 			  		  			  		  			  		 
+							  	</div>
+							  	<!--tab切换 end-->
+							  </div>
+							</div>
+							</div>
+						</div>
+						<!--banner-左-结束-->
+				</div>
+				
+				<!--商品介绍Tab切换2-->
+				<div class="troduce">
+						<div class="tro-nav large">
+						<ul class="ttabs">
+						<li class="tgoods">商品介绍</li>
+						<li>规格与包装</li>
+						<li>售后保障</li>
+						<li>商品评价(3.7万+)</li>
+						<li>手机社区</li>
+					    </ul>
+					    
+					    <!--加入购物车-->
+					    <div class="addbuycar">
+					    <div class="addbuy">
+					    	<a href="#">加入购物车</a>
+					    </div>
+					    
+					    <div class="mini-product">
+					    	<div class="mini-img">
+					    		<img src="img/images/mini.jpg" width="100" height="100">
+					    	</div>
+					    	
+					    	<div class="mini-info">
+					    		<div class="mini-name">Apple iPhone 7 (A1660) 128G 黑色 移动联通电信4G手机</div>
+					    		<div class="mini-price">
+					    			<strong>￥5899.00</strong>
+					    			<span>X 1</span>
+					    		</div>
+					    	</div>
+					    	
+					    </div>
+					    </div>
+					    
+					   </div>
+				
+						<div class="ttabs_con">
+							
+							<div class="thide tdiv">
+								<!--详情展示yy-->
+								<div class="yy-style">
+			<div class="w">		
+				
+		    <div class="context">
+		    	<!--商品介绍-->
+		    	<div class="tab-item">
+		    	  <div class="parameter">
+		    	  	
+		    	  		<ul class="para-list">
+		    	  		<li class="p1">
+		    	  			<i class="iphone"><img src="img/imgs/iphone.png"/></i>
+		    	  			<div class="detail"><p title="1334*750">分辨率：1334*750</p></div>
+		    	  		</li>
+		    	  		<li class="p1">
+		    	  			<i class="iphone"><img src="img/imgs/icamera.png"/></i>
+		    	  			<div class="detail">
+		    	  				<p title="1200万像素">后置摄像头：1200万像素</p>
+		    	  				<p title="700万像素">前置摄像头：700万像素</p>
+		    	  			</div>
+		    	  		</li>
+		    	  		<li class="p1">
+		    	  			<i class="iphone"><img src="img/imgs/icpu.png"/></i>
+		    	  			<div class="detail">
+		    	  			<p title="其他">核      数：其他</p>
+		    	  			<p title="以官网信息为准">频      率：以官网信息为准</p>
+		    	  			</div>
+		    	  		</li>
+		    	  		<div class="clear"></div>
+		    	  	</ul>
+		    	  	
+		    	    <ul id="para-brands" class="para-list">
+		    	      <li id="Apple">品牌：
+		    	      	<a href="#" class="apple" title="Apple">Apple</a>
+		    	      	<a href="#" class="heart"><b>♥</b>关注</a>
+		    	      </li>
+		    	    </ul>
+		    	    <!--增添盒子（修改处）-->
+		    	    <div class="yy-para-list">
+			    	    <ul id="para-list">
+			    	  		<li class="p2">商品名称：AppleiPhone7</li>
+			    	  		<li class="p2">商品编号：3133827</li>
+			    	  		<li class="p2">商品毛重：390.00g</li>
+			    	  		<li class="p2">商品产地：中国大陆</li>
+			    	  		<li class="p2">机身内存：128GB</li>
+			    	  		<li class="p2">后置摄像头像素：1200万-1999万</li>
+			    	  	</ul>
+			    	  	<div class="clear"></div>
+			    	  </div>
+			    	  <!--增添盒子（修改处）结束-->
+		    	    <p class="more-parameter"><a href="#">更多参数>>></a></p>
+		    	  </div>
+		    	  <div class="detail-banner">
+		    	  	<a href="#" ><img src="img/imgs/ads1.jpg"></a>
+		    	  </div>		    	  
+		    	  <div class="detail-content" style="clear: both;">
+		    	  	<div class="detail-header">
+		    	  	  <div class="head1">
+		    	  	  	<a href="#" style="clear: both;"><img src="img/imgs/detail-header.jpg"></a>
+		    	  	  </div>
+		    	  	  <div class="head2" style="margin-left: 53px;"><img src="img/imgs/detail-header1.jpg">
+		    	  	  </div>
+		    	  	</div>	
+		    	    <div class="detail-con">
+		    	  	 <table width="750" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F0F0F0">  
+						 <tbody>
+						  <tr>    
+						   <td height="336">
+						<div style="font-size: 16px; font-family: 微软雅黑; padding: 8px; line-height: 2em;">  
+						 <p>
+						  4.7 英寸（对角线）显示屏，1334 x 750 分辨率 <br>
+						      3D Touch<br>
+						      1200 万像素摄像头<br>
+						      配备嵌入式 M10 运动协处理器的 A10 Fusion 芯片<br>
+						      4K 视频拍摄 (30 fps) 以及慢动作视频拍摄 (120 fps, 1080p)<br>
+						      配备 Retina 闪光灯的 700 万像素 FaceTime HD 摄像头<br>
+						      内置于主屏幕按钮的 Touch ID 指纹识别传感器<br>
+						        具备 MIMO 技术的 802.11a/b/g/n/ac 无线网络
+						 </p>  
+						 <p>
+						  法律免责声明
+						 </p>  
+						 <p>
+						  1 iPhone 7 和 iPhone 7 Plus 可防溅、抗水、防尘，在受控实验室条件下经测试，其效果在 IEC 60529 标准下达到 IP67 级别。防溅、抗水、防尘功能并非永久有效，防护性能可能会因日常磨损而下降。请勿为潮湿状态下的 iPhone 充电；请参阅使用手册了解清洁和干燥说明。由于浸入液体而导致的损坏不在保修范围之内。<br>
+						      2 亮黑色 iPhone 7 和 iPhone 7 Plus 高光泽度的外观，采用包含九道精密工序的阳极氧化与抛光工艺打造而成。其表面硬度与其他采用阳极氧化处理的 Apple 产品相同；但是，高光泽度表面可能随着日常使用而出现细微磨损。如果对此有所担心，建议你选择一款合适的保护壳来保护你的 iPhone。<br>
+						      3 Apple Pay 仅在部分市场提供。请到苹果官网查看 Apple Pay 适用的国家和地区列表。<br>
+						      4 所有电池性能信息取决于网络设置和许多其它因素，实际结果可能有所不同。电池充电周期次数有限，最终可能需由 Apple 服务提供商更换。 电池使用时间和充电周期次数依设置和使用情况的不同而可能有所差异。详情请参阅 www.apple.com/cn/batteries 和 www.apple.com/cn/iphone/battery.html。<br>
+						      5 需要使用数据计划。4G LTE Advanced 和 4G LTE 功能适用于特定国家或地区的特定运营商。速度依据理论上的数据吞吐量，并基于现场状况和不同运营商而可能有所差异。有关 4G LTE 支持的详情，请联系你的运营商并查看 www.apple.com/iphone/LTE。<br>
+						      6 亮黑色的 iPhone 7 和 iPhone 7 Plus 仅提供 128GB 和 256GB 机型。<br>
+						      7 实际可供使用的空间小于总容量，并会因许多因素而可能有所差异。<br>
+						      8 某些功能仅适用于部分国家或地区。烦请到苹果官网查看详情<br>
+						      9 所有产品信息，以苹果官网为准（apple.com.cn)<br>
+						      　    <br>
+						      技术规格 <br>
+						      请前往 www.apple.com/cn/iphone-7/specs/ 查看完整内容。<br>
+						        
+						 </p>
+						</div>
+						   </td>  
+						  </tr>
+						 </tbody>
+	                  </table> 
+		    	  	 <!--detail-con end-->
+		    	  	</div>
+		    	    <div class="detail-footer" >
+		    	  	  <div style="text-align: center;">
+		    	  	  	<img src="img/imgs/detail-footer.jpg" />
+		    	  	  </div>
+		    	  	</div>
+		    	      
+		    	  </div>
+		    	  
+		    	</div>
+		    	<div class="clear"style="clear: both;"></div>
+		    	
+		    	<!--售后保障-->
+		    	
+		    	<div class="guarantee">
+		    		<div class="top">
+		    			<h3>售后保障</h3>
+		    		</div>
+		    		<!--修改开始1-->
+		    		<div class="guarantee">
+		    		<div class="yy-guarantee-top">
+		    			<div class="guarantee-top-left" >
+		    				<i class="yy-one-icon"></i>
+		    				<h2>厂家服务</h2>
+		    				<div class="clear"></div>
+		    			</div>
+		    		</div>
+		    		
+		    			<div class="guarantee-top-right">
+		    				<span>
+		    					本产品全国联保，享受三包服务，质保期为：一年质保
+		    					<br />		    					
+									如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7日内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！
+									<br />
+									(注:如厂家在商品介绍中有售后保障的说明,则此商品按照厂家说明执行售后保障服务。) 您可以查询本品牌在各地售后服务中心的联系方式，请点击这儿查询......
+									<br />
+									<br />									
+									品牌官方网站:<a href="http://www.apple.com.cn/">http://www.apple.com.cn/</a>
+									<br />
+									售后服务电话：400-666-8800
+		    				</span>
+		    			</div>
+		    		</div>
+		    		<!--修改结束1-->
+		    		<!--修改开始2-->
+		    		<div class="guarantee">
+		    		<div class="yy-guarantee-top">
+		    			<div class="guarantee-top-left" >
+		    				<i class="yy-one-icon"></i>
+		    				<h2>京东承诺</h2>
+		    				<div class="clear"></div>
+		    			</div>
+		    		</div>
+		    		
+		    			<div class="guarantee-top-right">
+		    				<span>
+		    					京东平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！
+		    					<br />		    					
+									注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正
+									<br />
+									货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+		    				</span>
+		    			</div>
+		    		</div>
+		    		<!--修改结束2-->
+		    		<!--修改开始3-->
+		    		<div class="guarantee">
+		    		<div class="yy-guarantee-top">
+		    			<div class="guarantee-top-left" >
+		    				<i class="yy-one-icon"></i>
+		    				<h2>正品行货</h2>
+		    				<div class="clear"></div>
+		    			</div>
+		    		</div>
+		    		
+		    			<div class="guarantee-top-right">
+		    				<span>
+		    					京东商城向您保证所售商品均为正品行货，京东自营商品开具机打发票或电子发票。
+		    				</span>
+		    			</div>
+		    		</div>
+		    		<!--修改结束3-->
+		    		<!--修改开始4-->
+		    		<div class="guarantee">
+		    		<div class="yy-guarantee-top">
+		    			<div class="guarantee-top-left" >
+		    				<i class="yy-last-icon"></i>
+		    				<h2>全国联保</h2>
+		    				<div class="clear"></div>
+		    			</div>
+		    		</div>
+		    		
+		    			<div class="guarantee-top-right">
+		    				<span>
+		    					凭质保证书及京东商城发票，可享受全国联保服务（奢侈品、钟表除外；奢侈品、钟表由京东联系保修，享受法定三包售后服务），与您亲临商场选购的商品享受相同的质量保证。
+		    					京东商城还为您提供具有竞争力的商品价格和运费政策，请您放心购买！
+		    					<br />
+		    					<br />
+		    					注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。
+		    					若本商城没有及时更新，请大家谅解！
+		    				</span>
+		    			</div>
+		    		</div>
+		    		<!--修改结束4-->		    		
+		    	</div>		    	
+		    	
+		    </div>
+		    	
+		    	<!--商品评价-->
+		    	<div class="evaluate">
+		    	  <div class="top">
+		    	  	<h3>商品评价</h3>
+		    	  </div>
+		    	  <div class="bottom">
+		    	  	<div class="comment-info">
+		    	  	  <div class="percent">
+		    	  	  	<strong class="percent-tit">好评度</strong>
+		    	  	  	<div class="percent-con">96<span>%</span></div>
+		    	  	  </div>
+		    	  	  <div class="percent-info">
+		    	  	  	<div class="tag-list">
+		    	  	  	   <span>系统流畅(709)</span>
+		    	  	  	   <span>外观漂亮(625)</span>
+		    	  	  	   <span>反应快(560)</span>
+		    	  	  	   <span>功能齐全(512)</span>
+		    	  	  	   <span>指纹识别(461)</span>
+		    	  	  	   <span>照相不错(446)</span>
+		    	  	  	   <span>分辨率高(396)</span>
+		    	  	  	   <span>通话质量好(375)</span>
+		    	  	  	   <span>性价比高(368)</span>
+		    	  	  	   <span>信号稳定(350)</span>
+		    	  	  	</div>
+		    	  	  </div>
+		    	  	</div>
+		    	  	<div class="comment-Tablist">
+		    	  	  <div class="tab-main">
+		    	  	  	<ul class="main-list">
+		    	  	  	  <li>
+		    	  	  	  	<a href="#none">全部评价<em>(3.7万+)</em></a>
+		    	  	  	  </li>
+		    	  	  	  <li>
+	                          <a href="#none">晒图<em>(500)</em></a>
+		    	  	  	  </li>
+		    	  	  	  <li>
+		    	  	  	  	<a href="#none">追评<em>(100+)</em></a>
+		    	  	  	  </li>
+		    	  	  	  <li>
+		    	  	  	    <a href="#none">好评<em>(3.6万+)</em></a>	
+		    	  	  	  </li>
+		    	  	  	  <li>
+		    	  	  	  	<a href="#none">中评<em>(700+)</em></a>
+		    	  	  	  </li>
+		    	  	  	  <li>
+		    	  	  	  	<a href="#none">差评<em>(600+)</em></a>
+		    	  	  	  </li>
+		    	  	  	  <li class="btnlist">
+		    	  	  	  	<span><input type="checkbox" id="comm-curr-sku"></span>
+		    	  	  	    <label for="comm-curr-sku">只看当前商品评价</label>
+		    	  	  	  </li>
+		    	  	  	</ul>
+		    	  	    <div class="extra">
+		    	  	    	<div class="select">
+		    	  	    		<div class="current">
+		    	  	    			<span class="sortType">推荐排序</span>
+		    	  	    		    <i class="sort"></i><!--小下拉箭头 -->
+		    	  	    		</div>
+		    	  	    		<div class="others"><!--未实现下拉-->
+		    	  	    			<ul>
+		    	  	    			  <li class="sortType-item">推荐排序</li>
+		    	  	    			  <li class="sortType-item">时间排序</li>
+		    	  	    			</ul>
+		    	  	    		</div>
+		    	  	    	</div>
+		    	  	    </div>
+		    	  	  </div>
+		    	  	  <!--tab-main end-->
+		    	  	  <div class="tab-con">
+		    	  	  	<div class="comment-item">
+		    	  	  	<div class="comment-0" style="width: 100%;border-bottom: 1px solid #eee;height: 217px; padding-bottom: 14px;">
+		    	  	  	  <div class="user">
+		    	  	  	  	<img src="img/imgs/user.PNG">
+		    	  	  	  	<div class="user-show">
+			    	  	  	  <div class="start5">
+			    	  	  	  </div>
+		    	  	  	  	  <p class="user-con">
+		    	  	  	  	  	用了几天，感觉这一代虽然缺少亮点，但是在续航方面相对于6走着很明显的提升。摄像的提升虽然不大，但是也足够有诚意了。至于放弃耳机接口这个问题确实比较纠结。就寄望于性价比高一些的蓝牙耳机早一点出现了。
+		    	  	  	  	  </p>	
+		    	  	  	  	  <div class="show-shop">
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop0.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop1.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop3.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop2.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop0.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop2.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop0.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop1.jpg"width="48" height="48"></a>
+		    	  	  	  	  </div>
+		    	  	  	  	  <div class="item-message">
+		    	  	  	  	  	 <div class="order-info">
+		    	  	  	  	  	 	<span>黑色</span>
+		    	  	  	  	  	 	<span>iPhone 7</span>
+		    	  	  	  	  	 	<span>2016-11-10 10:04</span>
+		    	  	  	  	  	 	<span>来自京东iPhone客户端</span>
+		    	  	  	  	  	 </div>
+		    	  	  	  	     <div class="comment-op">
+		    	  	  	  	     	<a class="J-nice" href="#"><i class="sprite-praise"></i><span>97</span></a>
+		    	  	  	  	     	<a class="J-nice" href="#"><i class="sprite-comment"></i><span>35</span></a>
+		    	  	  	  	     </div>
+		    	  	  	  	  </div>
+		    	  	  	  	</div>
+		    	  	  	  </div>
+		    	  	  	</div>
+		    	  	  	<div class="comment-0" style="width: 100%;border-bottom: 1px solid #eee;height: 217px;padding-bottom: 14px;">
+		    	  	  	  <div class="user">
+		    	  	  	  	<img src="img/imgs/user.PNG">
+		    	  	  	  	<div class="user-show">
+			    	  	  	  <div class="start5">
+			    	  	  	  </div>
+		    	  	  	  	  <p class="user-con">
+		    	  	  	  	  	双11买的，没想到第二天就到了，物流太快了，小说一下手机的质感。磨砂质感的黑色很漂亮，黑色天线的处理很得理，如果不仔细看根本看不出来，128g的内存可以当个硬盘用了，很划算！系统还是那么流畅，稳定！在这里赞一下惊动的物流！！
+		    	  	  	  	  </p>	
+		    	  	  	  	  <div class="show-shop">
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop3.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop2.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop0.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop2.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop0.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop1.jpg"width="48" height="48"></a>
+		    	  	  	  	  </div>
+		    	  	  	  	  <div class="item-message">
+		    	  	  	  	  	 <div class="order-info">
+		    	  	  	  	  	 	<span>黑色</span>
+		    	  	  	  	  	 	<span>iPhone 7</span>
+		    	  	  	  	  	 	<span>2016-11-10 10:04</span>
+		    	  	  	  	  	 	<span>来自京东iPhone客户端</span>
+		    	  	  	  	  	 </div>
+		    	  	  	  	     <div class="comment-op">
+		    	  	  	  	     	<a class="J-nice" href="#"><i class="sprite-praise"></i><span>50</span></a>
+		    	  	  	  	     	<a class="J-nice" href="#"><i class="sprite-comment"></i><span>15</span></a>
+		    	  	  	  	     </div>
+		    	  	  	  	  </div>
+		    	  	  	  	</div>
+		    	  	  	  </div>
+		    	  	  	</div>
+		    	  	  	<div class="comment-0" style="width: 100%;border-bottom: 1px solid #eee;height: 217px;padding-bottom: 14px;">
+		    	  	  	  <div class="user">
+		    	  	  	  	<img src="img/imgs/user.PNG">
+		    	  	  	  	<div class="user-show">
+			    	  	  	  <div class="start5">
+			    	  	  	  </div>
+		    	  	  	  	  <p class="user-con">
+			    	  	  	  	  	还不错，手机用了几天正常，11-8号买就划算，满5000优惠300，可惜急着提前买了。继续用着咯！
+	发布到社区还要50个字？手机中规中举，home按键和手机款式很喜欢，大家说屏幕比6s偏黄，其实也不明显，我仔细体会了，调节到米黄色跟舒适眼睛(所谓的黄昏效果，色调像书本的感觉) 照片里我的膜没买好！
+			    	  	  	  	  </p>	
+		    	  	  	  	  <div class="show-shop">
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop0.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop1.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop3.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop2.jpg"width="48" height="48"></a>
+		    	  	  	  	  	<a class="shop-img" href="#"><img src="img/imgs/show-shop0.jpg"width="48" height="48"></a>
+		    	  	  	  	  	</div>
+		    	  	  	  	  <div class="item-message">
+		    	  	  	  	  	 <div class="order-info">
+		    	  	  	  	  	 	<span>黑色</span>
+		    	  	  	  	  	 	<span>iPhone 7</span>
+		    	  	  	  	  	 	<span>2016-11-10 10:04</span>
+		    	  	  	  	  	 	<span>来自京东iPhone客户端</span>
+		    	  	  	  	  	 </div>
+		    	  	  	  	     <div class="comment-op">
+		    	  	  	  	     	<a class="J-nice" href="#"><i class="sprite-praise"></i><span>45</span></a>
+		    	  	  	  	     	<a class="J-nice" href="#"><i class="sprite-comment"></i><span>75</span></a>
+		    	  	  	  	     </div>
+		    	  	  	  	  </div>
+		    	  	  	  	</div>
+		    	  	  	  </div>
+		    	  	  	</div>
+		    	  	  </div>
+		    	  	  </div>
+		    	  	  </div>
+		    	  </div>
+		    	</div>
+		    </div>
+			</div>
+
+	 						 <!--详情展示yy结束-->
+														<!--购买咨询-->
+						<div class="consult">
+							<div class="consult-title">
+								<h3>购买咨询</h3>
+								<div class="consult-extra">
+									<div class="c-item">
+										<div class="c1"></div>&nbsp;&nbsp;<a href="#">联系供应商</a>&nbsp;&nbsp;&nbsp;
+									</div>
+									<div class="c-item">
+										<div class="c2"></div>&nbsp;&nbsp;<a href="#">JIMI</a>&nbsp;&nbsp;&nbsp;
+									</div>
+									<div class="c-item">
+										 <div class="consult-btn"><a href="#">发表咨询</a></div>
+									</div>
+								</div> 
+							</div>
+						
+						
+						    <!--购买咨询Tab切换-->
+						    <div class="consult-center">
+						        <div class="con-nav larger">
+									<ul class="ctabs">
+									<li class="cgoods">全部</li>
+									<li>商品咨询</li>
+									<li>库存配送</li>
+									<li>支付</li>
+									<li>发票保修</li>
+								    </ul>
+						        </div>
+						        
+						        <div class="ctabs_con">
+									<div class="chide cdiv">
+										<div class="consult-search">
+											<p>温馨提示：因每位咨询者购买情况、咨询时间等不同，以下回复对咨询者3天内有效，其他网友仅供参考。</p>
+										    <!-- 搜索栏	-->	
+										    <div class="c-search">
+											    <div class="c-form">
+													<input type="text"  placeholder="输入关键词" class="c-text"/>
+													<button onclick="key" class="c-button-icon"><i></i>搜索</button>
+												</div>
+											</div>
+											
+											
+											<div class="c-search-list">
+									    	    <div class="list-item">
+									    	    	<div class="l-item">
+									    	    		咨询内容：&nbsp;&nbsp;<a href="#">请问这款A1660能支持中国电信的133段的号码吗？</a>  <c>（c***u ）</c>   <d>2017-01-01 15:51:46</d>
+									    	    	</div>
+									    	    	<div class="item-answer">
+									    	    		京东回复：&nbsp;&nbsp;您好！支持的！感谢您对京东的支持！祝您购物愉快！    <d>2017-01-03 13:57:24</d>
+									    	    	</div>
+									    	    </div>
+									    	    
+									    	    <div class="list-item">
+									    	    	<div class="l-item">
+									    	    		咨询内容：&nbsp;&nbsp;<a href="#">请问这款A1660能支持中国电信的133段的号码吗？</a>  <c>（c***u ）</c>   <d>2017-01-01 15:51:46</d>
+									    	    	</div>
+									    	    	<div class="item-answer">
+									    	    		京东回复：&nbsp;&nbsp;您好！支持的！感谢您对京东的支持！祝您购物愉快！    <d>2017-01-03 13:57:24</d>
+									    	    	</div>
+									    	    </div>
+									    	    
+									    	    <div class="list-item">
+									    	    	<div class="l-item">
+									    	    		咨询内容：&nbsp;&nbsp;<a href="#">请问这款A1660能支持中国电信的133段的号码吗？</a>  <c>（c***u ）</c>   <d>2017-01-01 15:51:46</d>
+									    	    	</div>
+									    	    	<div class="item-answer">
+									    	    		京东回复：&nbsp;&nbsp;您好！支持的！感谢您对京东的支持！祝您购物愉快！    <d>2017-01-03 13:57:24</d>
+									    	    	</div>
+									    	    </div>
+									    	    
+									    	    <div class="list-item">
+									    	    	<div class="l-item">
+									    	    		咨询内容：&nbsp;&nbsp;<a href="#">请问这款A1660能支持中国电信的133段的号码吗？</a>  <c>（c***u ）</c>   <d>2017-01-01 15:51:46</d>
+									    	    	</div>
+									    	    	<div class="item-answer">
+									    	    		京东回复：&nbsp;&nbsp;您好！支持的！感谢您对京东的支持！祝您购物愉快！    <d>2017-01-03 13:57:24</d>
+									    	    	</div>
+									    	    </div>
+									    	    
+									    	    <div class="list-item">
+									    	    	<div class="l-item">
+									    	    		咨询内容：&nbsp;&nbsp;<a href="#">请问这款A1660能支持中国电信的133段的号码吗？</a>  <c>（c***u ）</c>   <d>2017-01-01 15:51:46</d>
+									    	    	</div>
+									    	    	<div class="item-answer">
+									    	    		京东回复：&nbsp;&nbsp;您好！支持的！感谢您对京东的支持！祝您购物愉快！    <d>2017-01-03 13:57:24</d>
+									    	    	</div>
+									    	    </div>
+									    	    
+									    	    <div class="total">
+									    	    	<c>共有9个咨询</c>  <a href="#">查看全部咨询 &gt;&gt;</a>
+									    	    </div>
+									    	    
+									    	    
+									        </div>
+											
+										</div>
+									
+									    
+									
+									
+									
+									
+									
+									</div>
+									
+									<div class="chide">bbbb</div>
+									<div class="chide">cccc</div>
+									<div class="chide">ddd</div>
+									<div class="chide">eee</div>
+						        </div>
+						
+						    </div>
+						</div>
+				
+				
+				        <!--手机社区-->
+						<div class="mobile">
+							<div class="mobile-title">
+								<h3>手机社区</h3>
+								<div class="mobile-extra">
+									<div class="m-item">
+										 <div class="mobile-btn"><a href="#">发表帖子</a></div>
+									</div>
+								</div>
+							</div>
+						
+						
+						    <!--手机社区Tab切换-->
+						    <div class="mobile-community">
+						        <div class="mo-nav largers">
+									<ul class="mtabs">
+									<li class="mgoods">热门贴</li>
+									<li>晒单帖</li>
+								    </ul>
+						        </div>
+						        
+						        <div class="mtabs_con">
+									<div class="mhide mdiv">
+										<div class="mobile-center">
+											<div class="mobile-community-list">
+									    	    <div class="m-list-item">
+									    	    	<div class="m-l-item">
+									    	    		<a href="#">免越狱 一张壁纸让你自定义排列图标
+									    	    	    <p>
+									    	    		在浏览YouTube的时候发现一个视频介绍了如何不用越狱自定义排列图标怎么可能呢在iOS设备上
+									    	    		我们需要对图标进行自定义排列是需要越狱之后下载安装相关的插件才能实现于是笔者按照视频的教程
+									    	    		体验了一把发现其实是利用桌面的一张截图创建对应图标拖放到相同位置来实现   详情>>
+									    	    		</p>
+									    	    		</a>
+									    	    	</div>
+									    	    	
+									    	    	<div class="m-item-time">2016-05-27 10:44:37 啊勤兄    <c>回复（13） 赞（1）</c>   </div>
+									    	    </div>
+									    	    
+									    	    <div class="m-list-item">
+									    	    	<div class="m-l-item">
+									    	    		<a href="#">免越狱 一张壁纸让你自定义排列图标
+									    	    	    <p>
+									    	    		在浏览YouTube的时候发现一个视频介绍了如何不用越狱自定义排列图标怎么可能呢在iOS设备上
+									    	    		我们需要对图标进行自定义排列是需要越狱之后下载安装相关的插件才能实现于是笔者按照视频的教程
+									    	    		体验了一把发现其实是利用桌面的一张截图创建对应图标拖放到相同位置来实现   详情>>
+									    	    		</p>
+									    	    		</a>
+									    	    	</div>
+									    	    	
+									    	    	<div class="m-item-time">2016-05-27 10:44:37 啊勤兄    <c>回复（13） 赞（1）</c>   </div>
+									    	    </div>
+									    	    
+									    	    <div class="m-list-item">
+									    	    	<div class="m-l-item">
+									    	    		<a href="#">免越狱 一张壁纸让你自定义排列图标
+									    	    	    <p>
+									    	    		在浏览YouTube的时候发现一个视频介绍了如何不用越狱自定义排列图标怎么可能呢在iOS设备上
+									    	    		我们需要对图标进行自定义排列是需要越狱之后下载安装相关的插件才能实现于是笔者按照视频的教程
+									    	    		体验了一把发现其实是利用桌面的一张截图创建对应图标拖放到相同位置来实现   详情>>
+									    	    		</p>
+									    	    		</a>
+									    	    	</div>
+									    	    	
+									    	    	<div class="m-item-time">2016-05-27 10:44:37 啊勤兄    <c>回复（13） 赞（1）</c>   </div>
+									    	    </div><div class="m-list-item">
+									    	    	<div class="m-l-item">
+									    	    		<a href="#">免越狱 一张壁纸让你自定义排列图标
+									    	    	    <p>
+									    	    		在浏览YouTube的时候发现一个视频介绍了如何不用越狱自定义排列图标怎么可能呢在iOS设备上
+									    	    		我们需要对图标进行自定义排列是需要越狱之后下载安装相关的插件才能实现于是笔者按照视频的教程
+									    	    		体验了一把发现其实是利用桌面的一张截图创建对应图标拖放到相同位置来实现   详情>>
+									    	    		</p>
+									    	    		</a>
+									    	    	</div>
+									    	    	
+									    	    	<div class="m-item-time">2016-05-27 10:44:37 啊勤兄    <c>回复（13） 赞（1）</c>   </div>
+									    	    </div>
+									    	    
+									    	    <div class="m-list-item">
+									    	    	<div class="m-l-item">
+									    	    		<a href="#">免越狱 一张壁纸让你自定义排列图标
+									    	    	    <p>
+									    	    		在浏览YouTube的时候发现一个视频介绍了如何不用越狱自定义排列图标怎么可能呢在iOS设备上
+									    	    		我们需要对图标进行自定义排列是需要越狱之后下载安装相关的插件才能实现于是笔者按照视频的教程
+									    	    		体验了一把发现其实是利用桌面的一张截图创建对应图标拖放到相同位置来实现   详情>>
+									    	    		</p>
+									    	    		</a>
+									    	    	</div>
+									    	    	
+									    	    	<div class="m-item-time">2016-05-27 10:44:37 啊勤兄    <c>回复（13） 赞（1）</c>   </div>
+									    	    </div>
+									    	    
+									    	    <div class="m-list-item">
+									    	    	<div class="m-l-item">
+									    	    		<a href="#">免越狱 一张壁纸让你自定义排列图标
+									    	    	    <p>
+									    	    		在浏览YouTube的时候发现一个视频介绍了如何不用越狱自定义排列图标怎么可能呢在iOS设备上
+									    	    		我们需要对图标进行自定义排列是需要越狱之后下载安装相关的插件才能实现于是笔者按照视频的教程
+									    	    		体验了一把发现其实是利用桌面的一张截图创建对应图标拖放到相同位置来实现   详情>>
+									    	    		</p>
+									    	    		</a>
+									    	    	</div>
+									    	    	
+									    	    	<div class="m-item-time">2016-05-27 10:44:37 啊勤兄    <c>回复（13） 赞（1）</c>   </div>
+									    	    </div>
+									    	    
+									    	    <div class="m-list-item">
+									    	    	<div class="m-l-item">
+									    	    		<a href="#">免越狱 一张壁纸让你自定义排列图标
+									    	    	    <p>
+									    	    		在浏览YouTube的时候发现一个视频介绍了如何不用越狱自定义排列图标怎么可能呢在iOS设备上
+									    	    		我们需要对图标进行自定义排列是需要越狱之后下载安装相关的插件才能实现于是笔者按照视频的教程
+									    	    		体验了一把发现其实是利用桌面的一张截图创建对应图标拖放到相同位置来实现   详情>>
+									    	    		</p>
+									    	    		</a>
+									    	    	</div>
+									    	    	
+									    	    	<div class="m-item-time">2016-05-27 10:44:37 啊勤兄    <c>回复（13） 赞（1）</c>   </div>
+									    	    </div>
+									    	    
+									    	    <div class="m-list-item">
+									    	    	<div class="m-l-item">
+									    	    		<a href="#">免越狱 一张壁纸让你自定义排列图标
+									    	    	    <p>
+									    	    		在浏览YouTube的时候发现一个视频介绍了如何不用越狱自定义排列图标怎么可能呢在iOS设备上
+									    	    		我们需要对图标进行自定义排列是需要越狱之后下载安装相关的插件才能实现于是笔者按照视频的教程
+									    	    		体验了一把发现其实是利用桌面的一张截图创建对应图标拖放到相同位置来实现   详情>>
+									    	    		</p>
+									    	    		</a>
+									    	    	</div>
+									    	    	
+									    	    	<div class="m-item-time">2016-05-27 10:44:37 啊勤兄    <c>回复（13） 赞（1）</c>   </div>
+									    	    </div>
+									    	    
+									    	    
+									    	    <div class="m-list-item">
+									    	    	<div class="m-l-item">
+									    	    		<a href="#">免越狱 一张壁纸让你自定义排列图标
+									    	    	    <p>
+									    	    		在浏览YouTube的时候发现一个视频介绍了如何不用越狱自定义排列图标怎么可能呢在iOS设备上
+									    	    		我们需要对图标进行自定义排列是需要越狱之后下载安装相关的插件才能实现于是笔者按照视频的教程
+									    	    		体验了一把发现其实是利用桌面的一张截图创建对应图标拖放到相同位置来实现   详情>>
+									    	    		</p>
+									    	    		</a>
+									    	    	</div>
+									    	    	
+									    	    	<div class="m-item-time">2016-05-27 10:44:37 啊勤兄    <c>回复（13） 赞（1）</c>   </div>
+									    	    </div>
+									    	    <div class="total">
+									    	    	<c>共有10个帖子</c>  <a href="#">查看全部帖子 &gt;&gt;</a>
+									    	    </div>
+									        </div>
+										</div>
+									</div>
+									<div class="mhide">bbbb</div>
+						       </div>
+						    </div>
+						</div>
+				
+							</div>
+							<div class="thide">bbbb</div>
+							<div class="thide">cccc</div>
+							<div class="thide">ddd</div>
+							<div class="thide">eee</div>
+						</div>
+						
+
+				</div>
+				</div>
+				</div>
+			<!--商品详情、评价区tab切换结束-->
+			<div class="clear"></div>
+		</div>
+		<!--content部分结束-->
+		<!--尾部开始-->
+		<div class="jy-footer">
+			<div class="jy-style">
+<!--猜你喜欢-->
+<div class="guesslike">
+	<div class="foot-nav">
+		<h3 class="title">猜你喜欢</h3>
+		<div class="extra"><b>1</b>/2</div>
+	</div>
+	
+    <!--尾部轮播-->	
+	<div class="footerslider">
+		<div class="f-left-slider"></div>
+		<div class="f-right-slider"></div>
+		
+		<div class="f-slider">
+			<ul>
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f1.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">Apple iPhone 7 Plus (A1661) 128G 黑色 移动联通电信4G手机</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥7188.00</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f2.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">Apple iPhone 7 (A1660) 128G 亮黑色 移动联通电信4G手机</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥5899.00</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f3.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">倍思（Baseus）iPhone7plus钢化膜 苹果7plus钢化玻璃膜 手机高清屏幕保护贴膜 弧边全玻璃全覆盖 黑色</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥16.90</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f4.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">亿色(ESR) iPhone7钢化膜 iPhone6S/6钢化膜 苹果7/6s/6钢化玻璃膜/手机高清屏幕保护贴膜(送贴膜神器)</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥19.90</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f5.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">亿色(ESR) iPhone7手机壳 苹果7手机壳/手机套 硅胶防摔轻薄软壳 初色零感系列 啫喱白</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥19.90</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f6.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">裳妃舍男式羊绒衫秋冬装新款时尚休闲针织衫毛衣常规款长袖加厚平面圆领款套头衫 浅灰 圆领--XL</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥339.00</div>					
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f7.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">【京东超市】绿之源 绿呼吸防尘口罩舒适型含3片静电吸附滤片九宫橙M款 精品包装</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥29.90</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f8.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">Apple iPhone 6s (A1700) 32G 玫瑰金色 移动联通电信4G手机</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥4299.00</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f1.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">Apple iPhone 7 Plus (A1661) 128G 黑色 移动联通电信4G手机</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥7188.00</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f9.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">奇幻梦境：一本漫游奇境的手绘涂色书</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥34.30</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f5.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">亿色(ESR) iPhone7手机壳 苹果7手机壳/手机套 硅胶防摔轻薄软壳 初色零感系列 啫喱白</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥19.90</div>	
+			</li>
+			
+			<li>
+				<div class="f-images">
+				   <div class="f-img">
+					   <img src="img/images/f1.jpg" width="160" height="160">
+				   </div>
+				
+				   <!--浮动名字-->
+				   <div class="f-name">
+					   <a href="#">Apple iPhone 7 Plus (A1661) 128G 黑色 移动联通电信4G手机</a>
+				   </div>
+				</div>
+				
+				<div class="f-price">￥7188.00</div>	
+			</li>
+			</ul>
+		</div>
+		
+	</div>
+	
+</div>
+
+
+<!--尾部-->
+<div class="footer">
+	<!--横条+购物指南-->
+	<div class="service">
+		<div class="spans">
+			<div class="span"><img src="img/images/span1.jpg" width="302" height="54"></div>
+			<div class="span"><img src="img/images/span2.jpg" width="302" height="54"></div>
+			<div class="span"><img src="img/images/span3.jpg" width="302" height="54"></div>
+			<div class="span"><img src="img/images/span4.jpg" width="302" height="54"></div>
+		</div>
+		
+		<div class="guide">
+			<div class="block">
+				<div class="b-name">购物指南</div>
+				<div class="block-list">
+					<div class="b-list"><a href="#">购物流程</a></div>
+					<div class="b-list"><a href="#">会员介绍</a></div>
+					<div class="b-list"><a href="#">生活旅行/团购</a></div>
+					<div class="b-list"><a href="#">常见问题</a></div>
+					<div class="b-list"><a href="#">大家电</a></div>
+					<div class="b-list"><a href="#">联系客服</a></div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="b-name">配送方式</div>
+				<div class="block-list">
+					<div class="b-list"><a href="#">上门自提</a></div>
+					<div class="b-list"><a href="#">211限时达</a></div>
+					<div class="b-list"><a href="#">配送服务查询</a></div>
+					<div class="b-list"><a href="#">配送费收取标准</a></div>
+					<div class="b-list"><a href="#">海外配送</a></div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="b-name">支付方式</div>
+				<div class="block-list">
+					<div class="b-list"><a href="#">货到付款</a></div>
+					<div class="b-list"><a href="#">在线支付</a></div>
+					<div class="b-list"><a href="#">分期付款</a></div>
+					<div class="b-list"><a href="#">邮局汇款</a></div>
+					<div class="b-list"><a href="#">公司转账</a></div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="b-name">售后服务</div>
+				<div class="block-list">
+					<div class="b-list"><a href="#">售后政策</a></div>
+					<div class="b-list"><a href="#">价格保护</a></div>
+					<div class="b-list"><a href="#">退款说明</a></div>
+					<div class="b-list"><a href="#">返修/退换货</a></div>
+					<div class="b-list"><a href="#">取消订单</a></div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="b-name">特色服务</div>
+				<div class="block-list">
+					<div class="b-list"><a href="#">夺宝岛</a></div>
+					<div class="b-list"><a href="#">DIY装机</a></div>
+					<div class="b-list"><a href="#">延保服务</a></div>
+					<div class="b-list"><a href="#">京东E卡</a></div>
+					<div class="b-list"><a href="#">京东通信</a></div>
+					<div class="b-list"><a href="#">京东JD+</a></div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+    <!--最底部-->
+    <div class="f-bottom">
+    	<div class="bottom">
+    		<div class="f-links">
+    			<a href="#">关于我们</a>|<a href="#">联系我们</a>|<a href="#">商家入驻</a>|<a href="#">营销中心</a>|<a href="#">手机京东</a>
+    			|<a href="#">友情链接</a>|<a href="#">销售联盟</a>|<a href="#">京东社区</a>|<a href="#">风险监测</a>|<a href="#">京东公益</a>
+    			|<a href="#">English Site</a>|<a href="#">Contact Us</a>
+    		</div>
+    		
+    		<div class="bottom-center">
+    			<a href="#"><img src="img/images/bc1.png">&nbsp;京公网安备 11000002000088号</a>|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|<a href="#"> 互联网药品信息服务资格证编号(京)-经营性-2014-0008 </a>
+    			|&nbsp;&nbsp;新出发京零 字第大120007号
+    			<br>
+    			互联网出版许可证编号新出网证(京)字150号&nbsp;&nbsp;|<a href="#">出版物经营许可证</a>|<a href="#"> 网络文化经营许可证京网文[2014]2148-348号</a>|&nbsp;&nbsp;违法和不良信息举报电话：4006561155
+    			<br>
+    			Copyright © 2004-2017  京东JD.com 版权所有 &nbsp;&nbsp;|&nbsp;&nbsp;消费者维权热线：4006067733&nbsp;&nbsp;|<a href="#">经营证照</a>
+    			<br>
+    			京东旗下网站：京东钱包
+    		</div>
+    		
+    		<div class="bottom-footer">
+    			<a href="#"><img src="img/images/fb1.png"></a><a href="#"><img src="img/images/fb2.png"></a><a href="#"><img src="img/images/fb3.jpg"></a>
+    			<a href="#"><img src="img/images/fb4.png"></a><a href="#"><img src="img/images/fb5.jpg"></a><a href="#"><img src="img/images/fb6.jpg"></a>
+    	    </div>
+    	    <div class="copy-right">
+		       <p> @ copyright
+		       	<a href="http://www.lingnan.edu.cn/" title="信息工程学院" target="_blank">岭南师范学院</a> 
+		       	 14外包2 </br> <a href="http://www.lingnan.edu.cn/" target="_blank" title="精心设计，专属出品">ying  --翻版必究</a>
+		       </p>
+	  </div>
+        </div>
+    	
+    </div>
+
+</div>	
+
+</div>
+		</div>
+		<!--尾部结束-->
+	</div>
+		
+	</body>
+	
+	
+	<script type="text/javascript">
+		//选择地址--三角更换
+		$('.tn-left-1').mouseover(function(){
+	   $('.left-1 .tri').text("∧");
+		});
+
+		$('.tn-left-1').mouseout(function(){
+	   $('.left-1 .tri').text('∨');	   
+		});
+		//我的京东--三角更换
+		$('.tnr3').mouseover(function(){
+	   $('.myjd .tri').text("∧");
+		});
+
+		$('.tnr3').mouseout(function(){
+	   $('.myjd .tri').text('∨');	   
+		});
+		//配送地址--三角更换
+		$('.stock-address').mouseover(function(){
+	   $('.stock-address .tri').text("∧");
+		});
+
+		$('.stock-address').mouseout(function(){
+	   $('.stock-address .tri').text('∨');	   
+		});
+		//付款-配送-取货--三角更换
+		
+		$('.stock-pay-take').mouseover(function(){
+			
+	   $('.stock-pay-take .tri').text("∧");
+		});
+
+		$('.stock-pay-take').mouseout(function(){
+	   $('.stock-pay-take .tri').text('∨');	   
+		});
+		
+		//显示块级元素，顶部导航送货地址下拉框
+		$('.tn-left-1').mouseover(function(){
+			
+			$('.tn-left-1').css('background-color','white');			
+			$('.addr-next-1').show();
+			
+		})				
+		//隐藏块级元素，
+		$('.tn-left-1').mouseout(function(){
+			$('.tn-left-1').css('background-color','#F1F1F1');
+			$('.addr-next-1').hide();
+			
+		})
+
+		//	我的京东显示效果
+		$('.tnr3').mouseover(function(){
+			$('.myjd li').css('background-color','white');	
+			$('.myjd-dropdown').show();
+		})
+		//我的京东隐藏效果
+		$('.myjd-dropdown'&&'.tnr3').mouseout(function(){
+			$('.myjd li').css('background-color','#F1F1F1');
+			$('.myjd-dropdown').hide();
+		})
+		
+		//	付款-配送-取货显示效果
+		$('.stock-pay-take').mouseover(function(){
+			$('.stock-pay-take ul').css('border','1px solid #ccc');	
+			$('.stock-pay-take ul').css('padding','2px');		
+			$('.pay-take-dropdown').show();
+		})
+		//付款-配送-取货隐藏效果
+		$('.stock-pay-take').mouseout(function(){
+			$('.stock-pay-take ul').css('border','0px');
+			$('.stock-pay-take ul').css('padding','0');	
+			$('.pay-take-dropdown').hide();
+		})
+//		增删改商品个数
+		$('#plus').click(function(){
+			$('#number').val(parseInt($('#number').val())+1);
+			if($('#number').val()>1){
+				$('#reduce').removeClass('disabl');
+			}
+		})
+		
+		$('#reduce').click(function(){
+			var num=parseInt($('#number').val());
+			if(num<=1){
+				$(this).addClass('disabl');
+				return;
+			}
+			else{
+				$(this).removeClass('disabl');
+				$('#number').val(num-1);
+			}
+			
+		})
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	// 三级菜单部分jq
+     //下拉导航菜单分类
+		//	显示下拉效果
+		$('.allbtn').mouseover(function(){
+			$('.dot img').css('transform','rotate(180deg)');//旋转的小箭头
+			$('.next').show();
+			$('.goods').show();
+		})
+		$('.next .item').mouseover(function(){
+			$('.dot img').css('transform','rotate(180deg)');//旋转的小箭头
+			$('.next').show();
+			$('.right').show();
+			$('.right .item-sub').hide();//在选取index之前，关掉之前的最内层选项卡。
+			$($('.right .item-sub')[$(this).index()]).show();//根据选项卡的下标index来显示具体的选项卡
+//			console.log($(this).index());测试用
+		})
+		$('.right').mouseover(function(){
+			$('.right').show();
+		})
+       //  隐藏下拉效果
+		$('.allbtn').mouseout(function(){
+			$('.dot img').css('transform','rotate(0deg)');//旋转的小箭头
+			$('.next').hide();			
+		})
+		$('.next').mouseout(function(){
+			$('.right').hide();
+		})
+		
+		$('.goods').mouseleave(function(){
+			$(this).hide();
+		})		
+   
+    //侧边栏的tab切换
+	$("#tab li").click(function(){
+	 	$('#tab_con').show();
+	 	$("#tab li").removeClass('fli');	   
+	 	$(this).addClass('fli');
+	 	$("#tab_con #item").hide();
+//	 	alert(123);
+	 	$("#tab_con #item").eq($(this).index()).addClass('fdiv');
+	 	$("#tab_con #item").eq($(this).index()).show();
+	})
+     
+    //侧边栏的Json数据
+//	 $(function(){
+//	 		
+//			getData();
+////			alert(123);
+//			function getData(){
+//			    $.ajax({
+//			        type: 'GET',
+//			        url: './data/Datalist.json',//Json数据接口
+//			        dataType: 'json',
+//			        success: function(data){
+//			        
+//						var htme=htmll(data);
+////						alert(123);
+////						console.log(data); 
+//						$('.plist').append(htme);
+//			        },
+//			        error: function(xhr, type){
+//			            alert('Ajax error!');
+//			        }
+//			    })
+//			}
+//			function htmll(data){
+//				var html='';
+//				for(i in data){
+//					
+//                html=html+'<li class="p_1">'+'<div class="p-img">'+'<a href="#">'
+//					+'<img src="'+data[i].img+'"/></a>'
+//					+'<div class="p-name">'+'<a href="#">'+data[i].name+'</a>'
+//					+'<div class="p-price">'+'<strong class="J-p-3133857">'+data[i].price+'</strong></div></li>'
+//               
+//				}
+//				return html;
+//				
+//			}
+//			
+//
+//		}) 
+//   
+//   
+	
+
+    $(function(){
+    
+    //--------------------------------小图切换中图------------------------
+    $(".smallimg-slider li img").bind("click", function(){
+		if ($(this).attr("class") != "fir") {
+			midChange($(this).attr("src").replace("img/images/s", "img/images/m"));
+			$(".smallimg-slider li").removeAttr("class");
+			$(this).parent().attr("class", "fir");
+		}
+	}).bind("mouseover", function(){
+		if ($(this).attr("class") != "fir") {
+			window.clearTimeout(midChangeHandler);
+			midChange($(this).attr("src").replace("img/images/s", "img/images/m"));
+			$(this).css({ "border": "2px solid #e53e41" });
+		}
+	}).bind("mouseout", function(){
+		if($(this).attr("class") != "fir"){
+			$(this).removeAttr("style");
+			midChangeHandler = window.setTimeout(function(){
+				midChange($(".fir img").attr("src").replace("img/images/s", "img/images/m"));
+			}, 1000);
+		}
+	});
+    function midChange(src) {
+        $(".midimg").attr("src", src).load(function() {
+            changeViewImg();
+        });
+    }
+	
+	
+	//大视窗看图，放大镜效果
+    function mouseover(e) {
+        if ($("#winSelector").css("display") == "none") {
+            $("#winSelector,#bigView").show();
+        }
+        $("#winSelector").css(fixedPosition(e));
+        e.stopPropagation();
+    }
+    function mouseOut(e) {
+        if ($("#winSelector").css("display") != "none") {
+            $("#winSelector,#bigView").hide();
+        }
+        e.stopPropagation();
+    }
+    $(".midimg").mouseover(mouseover); //中图事件
+    $(".midimg,#winSelector").mousemove(mouseover).mouseout(mouseOut); //选择器事件
+
+    var $divWidth = $("#winSelector").width(); //选择器宽度
+    var $divHeight = $("#winSelector").height(); //选择器高度
+    var $imgWidth = $(".midimg").width(); //中图宽度
+    var $imgHeight = $(".midimg").height(); //中图高度
+    var $viewImgWidth = $viewImgHeight = $height = null; //IE加载后才能得到 大图宽度 大图高度 大图视窗高度
+
+    function changeViewImg() {
+        $("#bigView img").attr("src", $(".midimg").attr("src").replace("img/images/m", "img/images/b"));
+    }
+    changeViewImg();
+    $("#bigView").scrollLeft(0).scrollTop(0);
+    function fixedPosition(e) {
+        if (e == null) {
+            return;
+        }
+        var $imgLeft = $(".midimg").offset().left; //中图左边距
+        var $imgTop = $(".midimg").offset().top; //中图上边距
+        X = e.pageX - $imgLeft - $divWidth / 2; //selector顶点坐标 X
+        Y = e.pageY - $imgTop - $divHeight / 2; //selector顶点坐标 Y
+        X = X < 0 ? 0 : X;
+        Y = Y < 0 ? 0 : Y;
+        X = X + $divWidth > $imgWidth ? $imgWidth - $divWidth : X;
+        Y = Y + $divHeight > $imgHeight ? $imgHeight - $divHeight : Y;
+
+        if ($viewImgWidth == null) {
+            $viewImgWidth = $("#bigView img").outerWidth();
+            $viewImgHeight = $("#bigView img").height();
+            if ($viewImgWidth < 200 || $viewImgHeight < 200) {
+                $viewImgWidth = $viewImgHeight = 800;
+            }
+            $height = $divHeight * $viewImgHeight / $imgHeight;
+            $("#bigView").width($divWidth * $viewImgWidth / $imgWidth);
+            $("#bigView").height($height);
+        }
+        var scrollX = X * $viewImgWidth / $imgWidth;
+        var scrollY = Y * $viewImgHeight / $imgHeight;
+        $("#bigView img").css({ "left": scrollX * -1, "top": scrollY * -1 });
+        $("#bigView").css({ "top": -473, "left": $(".preview").offset().left + $(".preview").width() - 65 });
+
+        return { left: X, top: Y };
+    }
+	
+    //--------------------------------------------------------------------	
+	
+    //--------------------------------Tab切换-------------------------------
+		$('.tabs li').click(function(event){
+        //$('.hide').show();
+			$('.tabs li').removeClass('popularity');
+			$(this).addClass('popularity');
+			$('.hide').removeClass('podiv');
+			$('.hide').eq($(this).index()).addClass('podiv');
+			 // event.stopPropagation();
+			 // e.stopPropagation()
+		})
+	
+	
+	
+	
+	
+	//--------------------------------Tab切换2-------------------------------
+		$('.ttabs li').click(function(event){
+			$('.ttabs li').removeClass('tgoods');
+			$(this).addClass('tgoods');
+			$('.thide').removeClass('tdiv');
+			$('.thide').eq($(this).index()).addClass('tdiv');
+			 // event.stopPropagation();
+			 // e.stopPropagation()
+		})
+	
+	
+	//-----------------------------购买咨询Tab切换--------------------------------
+	
+	    $('.ctabs li').click(function(event){
+			$('.ctabs li').removeClass('cgoods');
+			$(this).addClass('cgoods');
+			$('.chide').removeClass('cdiv');
+			$('.chide').eq($(this).index()).addClass('cdiv');
+			 // event.stopPropagation();
+			 // e.stopPropagation()
+		})
+	    
+	    
+	    
+		//-----------------------------手机社区Tab切换--------------------------------
+	
+	    $('.mtabs li').click(function(event){
+			$('.mtabs li').removeClass('mgoods');
+			$(this).addClass('mgoods');
+			$('.mhide').removeClass('mdiv');
+			$('.mhide').eq($(this).index()).addClass('mdiv');
+			 // event.stopPropagation();
+			 // e.stopPropagation()
+		})
+	    
+	
+	
+	//--------- 轮播-------
+	$('.m-left-slider').click(function(){
+			var left=$('.m-slider').scrollLeft();
+			
+			var time=setInterval(function(){
+				left=left-20;
+				$('.m-slider').scrollLeft(left);
+				if(left<=0){
+					clearInterval(time);
+				}
+			},20)
+			
+		})
+		$('.m-right-slider').click(function(){
+			var right=$('.m-slider').scrollLeft();
+			
+			var time2=setInterval(function(){
+				right=right+20;
+				$('.m-slider').scrollLeft(right);
+				if(right>=144){
+					clearInterval(time2);
+				}
+			},20)
+		})
+	
+	//----------------------------------------------------------------------
+	
+	//--------- 尾部轮播-------
+	$('.f-left-slider').click(function(){
+			var left=$('.f-slider').scrollLeft();
+			
+			var time3=setInterval(function(){
+				left=left-100;
+				$('.f-slider').scrollLeft(left);
+//				console.log(left);
+				if(left<=0){
+					clearInterval(time3);
+				}
+			
+			},20)
+			
+		  
+	
+	})
+		$('.f-right-slider').click(function(){
+			var right=$('.f-slider').scrollLeft();
+			
+			var time4=setInterval(function(){
+				right=right+100;
+				$('.f-slider').scrollLeft(right);
+				if(right>=1128){
+					clearInterval(time4);
+				}
+			},20)
+			
+		})
+	
+	//----------------------------------------------------------------------
+	
+});	
+</script>
+</html>

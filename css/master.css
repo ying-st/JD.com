@@ -1,0 +1,569 @@
+html, body, ul, li, ol, dl, dd, dt, p,a, h1, h2, h3, h4, h5, h6, form, fieldset, legend,span, img,input {border:0; margin:0; padding:0; font-family: "verdana,simsun"}
+em, i, u ,b{
+    font-style: normal;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+a:hover{
+	color: #C81623;
+}
+ul{
+	list-style: none;
+}
+li a{
+	    color: #666;
+}
+body{
+	
+	font:12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+.header{
+	background: #F1F1F1;
+	margin-bottom: 8px;
+}
+/*同样式导航*/
+.nav-lyt{
+	color: #666;
+	width:90%;
+	margin: 0 auto;
+
+	background: #F1F1F1;
+}
+.nav-lyt li{
+	line-height: 2.5;
+}
+
+/*导航-左*/
+.tn-left-1{
+	float: left;
+}
+/*设置下拉菜单为相对定位*/
+.tn-left-1-dropdown{
+	position: relative;
+}
+.left-1{
+	padding: 0 8px;
+}
+/*下拉菜单的子元素，导航地址选项*/
+.addr-next-1{
+	position: absolute;
+	top:30px;
+	background: #fff;
+	display: none;
+	
+}
+.addr-next-1 ul li{
+	float: left;
+	background: white;
+	padding:0 8px;
+	margin-top: 5px;
+}
+.addr-next-1 ul li:hover{
+	background: #F1F1F1;
+}
+.tnr3 ul li:hover{
+	background: #F1F1F1;
+}
+
+/*导航-右*/
+.nav-right{
+	float: right;
+}
+.nav-right li{
+  float: left;
+  height: 30px;
+  padding: 0 2px;
+  margin-right: 5px;
+}
+.nav-right div{float: left;margin-right: 10px;}
+/*手机产品导航*/
+.pro-nav {
+    padding: 12px 0px;
+}
+.pd span {
+    color: white;
+    background: #e4393c;
+    width: 54px;
+    padding: 3px 3px;
+    border-radius: 3px;
+}
+.apple .tri {
+    margin-left: 14px;
+}
+span.apple {
+    background: white;
+    color: #999;
+    border: 1px solid #ccc;
+    padding: 4px 7px;
+}
+/*供应商*/
+.gys {
+  background: url(../img/nav/gys-im.gif);
+  height: 20px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: -7px;
+}
+/*JIMI*/
+.jimi{
+	background: url(../img/nav/JIMI-gaunzhu.png) 0 0;
+	height: 20px;
+  width: 16px;
+  display: inline-block;
+  vertical-align: -7px;
+  margin-right: 4px;
+}
+.jimi-st .st {
+    vertical-align: -2px;
+    font-family: inherit;
+}
+/*关注店铺*/
+.gz-store {
+    background: url(../img/nav/JIMI-gaunzhu.png) 16px 1px;
+    height: 17px;
+    width: 16px;
+    display: inline-block;
+    vertical-align: -4px;
+    margin-right: 4px;
+}
+/*我的京东*/
+.tnr3 .myjd{margin-right: 0;}
+.myjd li {
+    margin-right: -5px;
+}
+.myjd-dropdown {
+    display: none;
+  position: absolute;
+  top:30px;
+  background: white;
+}
+
+ul.myjd-dd li {
+    padding-right: 60px;
+}
+.myjd-dd-border{border-top: 1px solid #F1F1F1;}
+
+.mobile-jd-icon{
+
+  width: 17px;
+  height: 26px;
+  float: left;
+  background: url(../img/nav/jd.png) -2px 5px no-repeat;
+}
+
+.nav-left2 div{
+	float: left;
+}
+.right-arrow{
+	font-family: simsun;
+  padding: 0 10px;
+}
+
+/*下拉菜单-三角*/
+.dropdown{
+	position: relative;
+}
+.tri{
+	text-decoration: none;
+	font: menu;
+}
+
+/*导-登陆注册*/
+.login{
+	margin-right: 10px;
+}
+.register{
+	color: #C81623;
+}
+
+/*导-右-小竖条*/
+li.spacer {
+  width: 1px;
+  height: 12px;
+  margin-top: 9px;
+  padding: 0;
+  background: #ddd;
+ 
+}
+
+.content{
+	width: 90%;
+	margin: auto;
+	
+}
+/*商品图片+商品内容详情*/
+/*左*/
+/*.pro-show{	
+	width: 450px;height: 810px;
+	border: 1px solid #F1F1F1;
+	background-color: red;
+	float: left;
+	margin-right:15px ;}*/
+/*右*/
+.pro-price{	
+	width: 738px;
+  
+  background-color: white;
+  float: left;}
+
+/*商品名*/
+.pro-name{
+	font: 700 16px Arial,"microsoft yahei";
+  color: #666;
+  padding-top: 10px;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+/*优惠新闻*/
+.pro-news {
+  color: red;
+  margin-bottom: 5px;
+}
+
+/*商品价格、信息*/
+.price{
+  background: #f3f3f3;
+  width: 200px;
+  height: 200px;
+}
+.summary-price{
+	width: 738px;
+	margin-top: -10px;    
+	background-color: #F1F1F1;
+}
+/*京东价、领券、促销、支持、配送至、重量、选择颜色统一字样*/
+.summary-left{
+	color: #999;
+	float: left;
+	margin-right: 10px;
+	font-family: simsun;
+	width: 50px;
+	padding-left: 10px;}
+/*京东价-价格-降价通知*/
+.jd-price{padding-top: 15px;position: relative;}
+.summary-right{
+  font-family: "microsoft yahei";
+  color: #E4393C;
+  bottom: -17px;
+  position: absolute;
+  left: 66px;}
+.money-symbol{
+  font-size: 16px;
+  font-weight: 700;}
+.jd-price-num{
+	font-weight: 600;
+  font-size: 22px;
+  padding-right: 5px;    }
+.cut-price{color: #005aa0; vertical-align: 2px;}
+
+/*累计评价*/
+.comment-count{
+	float: right;
+	border-left: 1px solid #999;
+	padding: 0 15px;
+	text-align: center;
+	}
+.calculate-comment{
+	color: #999;}
+.comment-num{
+	color: #005aa0;
+	font-size: 14px;}
+
+/*领券*/
+.jd-Lquan{
+	clear: left;
+	padding-top: 15px;}
+.Lquan-logo{
+	position: relative;}
+.Lquan-logo:hover {
+	background: #fff4f4;}
+/*边框-波浪线图片*/
+.wavy {
+    background: url(../img/product/quan-arr.gif);
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    top: -2px;
+}
+/*满减*/
+.full-cut {
+  color: #D60505;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 1px 10px;
+  font-size: 13px;
+  background-color: #ffdedf;
+}
+span.full-cut:hover {
+    background-color: #fff4f4;
+}
+/*促销板块*/
+.summary-left.pro-sale {
+  line-height: 25px;
+}
+.jd-sale{
+	display:block;
+  padding-top: 15px;
+	background-image: url(../img/product/price-bg.png);
+	}
+.summary-right-active {
+  float: left;
+  width: 580px;
+  line-height: 20px;
+  margin-top: -10px;
+}
+.summary-right-active span {
+  border: 1px solid #df3033;
+  padding: 2px 3px;
+  margin-right: 5px;
+  line-height: 43px;
+}
+.summary-right-active em {
+  line-height: 18px;
+  color: #666;
+}
+
+/*商品选择板块*/
+/*支持*/
+.pro-choose{
+	padding-top: 15px;
+	margin-bottom: 20px;}
+.support-package{
+	float: left;}
+.support-package li{
+	float: left; margin-right: 10px;}
+.sp-two  i{float: left;
+    width: 16px;
+    height: 16px;
+    background: url(../img/product/small-icon.png);
+    margin-right: 3px;
+    margin-top: 1px;}
+.old-new i{
+	background-position: -32px 0;}
+.package-4G i {
+	background-position: -16px -32px;}
+
+.sp-two span {
+    border: 1px solid #ced2e6;
+    border-radius: 8px;
+    padding: 2px 5px 2px 18px;
+    color: #5e69ad;
+    margin-left: -20px;
+}
+/*配送*/
+.summary-stock {
+	clear: left;
+	padding-top: 15px;
+	}
+.summary-stock-right {
+	margin-left: 70px;
+	}
+.stock-address {
+	float: left;
+	margin-right: 10px;}
+/*配送地址下拉菜单，隐藏*/
+.stock-addr-dropdown {
+    display: none;
+}
+
+
+.stock-address em {
+    color: #666;
+    font-family: simsun;
+}
+.stock-address strong {
+    color: #999;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+/*付款、取货*/
+.stock-pay-take  {
+    
+    margin-left:215px;
+    margin-right: 150px;
+    position: relative;
+    }
+.stock-pay-take ul{
+	position: absolute;
+	background: white;
+}
+.stock-pay-take li {
+    float: left;
+}
+.stock-pay-take a {
+    padding: 0 10px;
+    color: #646FB0;
+}
+/*a标签的右边框*/
+.line-right {
+    float: left;
+    border-right: 1px solid #EAEAEA;
+}
+/*付款-配送-取货下拉弹框*/
+.pay-take-dropdown {
+	display: none;
+	background: #fff;
+	margin-top: 5px;
+}
+/*底部信息*/
+.stock-bottom-information {
+    clear: left;
+    color: #999;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+/*货品重量*/
+.stock-weight {
+    padding:10px 0 15px 0;
+    border-bottom: 1px dotted #dfdfdf;
+}
+/*————————————————手机商品选择板块————————————————*/
+/*每个整块div的顶部外边距*/
+.choose-top {float: left;}
+/*左边文字清浮动*/
+.left-text{margin-top: 15px;}
+/*右边选择框统一样式的li、span标签*/
+.right-choose-box{margin-left: 70px;}
+.right-choose-box a{display:block;float:left;margin-right: 7px;margin-bottom: 4px;border: 1px solid #ccc;}
+.right-choose-box a:hover{border: 1px solid #e3393c;}
+.right-choose-box span{color: #666;font: 12px/150% Arial,Verdana;}
+	/*手机颜色*/
+.choose-phone {
+    margin-top: 15px;
+}
+.pic-color {
+    float: left;
+    margin-left: -70px;
+    margin-bottom: -5px;
+}
+.pic-phone span {
+    vertical-align: 14px;
+    padding-right: 8px;
+}
+	/*容量*/
+.choose-capacity {
+    clear: both;
+    padding-top: 5px;
+}
+.capacity-box a {
+	padding: 10px 15px;
+	margin-top: 4px;
+}
+	/*购买方式*/
+.buy-choose-box a {
+    padding: 7px 13px;
+    margin-top: 4px;
+}
+.buy-choose-box img {
+    display: inline-block;
+    vertical-align: -4px;
+}
+.clear{
+	clear: both;
+}
+/*问号小图标*/
+.question {
+    display: inline-block;
+    vertical-align: -14px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/product/pro-logo.png) 0 0 no-repeat;
+    
+}
+	/*套装*/
+	/*增值服务*/
+	.choose-service a {
+    padding: 5px 6px;
+}
+	/*白条分期*/
+	.baitiao {
+    padding-bottom: 13px;
+}
+.youhui {
+	background: url(../img/product/baitiao-hui.png);
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: -14px;
+    margin-top: 14px;
+}
+/*购物车*/
+.buy-btn {
+    clear: both;
+    padding: 0 10px;
+    border-top: 1px dotted #dfdfdf;
+}
+
+.number {
+
+    width: 31px;
+    height: 44px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-right: 0;
+    float: left;
+}
+.buy-num-btn{
+    display: block;
+    color: #666;
+    border: 1px solid #ccc;
+    width: 15px;
+    text-align: center;}
+.plus-reduce {
+    float: left;
+    background: #f1f1f1;
+    line-height: 21px;
+    margin-right: 11px;
+}
+.btn-logo {
+    height: 46px;
+    line-height: 46px;
+    padding: 0 26px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: #df3033;
+    font-family: "microsoft yahei";
+    padding: 10px 25px;
+}
+.btn-logo:hover {    color: white;}
+.plus-reduce a:hover{ color: #666;}
+/*本地活动*/
+.local-active a {
+    line-height: 48px;
+    color: #005aa0;
+}
+.local-active a:hover{color:#e4393c ;}
+/*温馨提示*/
+.tips span {
+    font-family: simsun;
+    color: #999;
+}
+.tips {
+    margin-top: -10px;
+}
+
+
+/*鼠标禁用样式*/
+.disabl{
+	  cursor: not-allowed;
+}
+
+/*——————————整合修改——————————*/
+/*中间搜索部分*/
+.jy-style .search-middle {
+    background: white;
+}
+.jy-style .middle {
+    width: 1210px;
+    margin: auto;
+}
+/*手机商品小栏外加盒子*/
+.pro-lyt {
+    background: #f1f1f1;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}

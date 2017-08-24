@@ -1,0 +1,40 @@
+[
+
+  {
+     "img":"img/imgs/plist-img1.jpg",
+     "name":"Apple iPhone 7 Plus (A1661) 128G 黑色 移动联通电信4G手机",
+     "price":"￥7188.00"
+  },
+  
+  {
+     "img":"img/imgs/plist-img2.jpg",
+     "name":"Apple iPhone 6s (A1700) 32G 玫瑰金色 移动联通电信4G手机",
+     "price":"￥4299.00"
+  },
+  
+  {
+     "img":"img/imgs/plist-img3.jpg",
+     "name":"荣耀8 4GB+32GB 全网通4G手机 幻夜黑",
+     "price":"￥2299.00"
+  },
+  
+  {
+     "img":"img/imgs/plist-img4.png",
+     "name":"Apple iPhone 7（A1660 ）移动联通电信4G手机 黑色 32GB",
+     "price":"￥5048.00"
+  },
+  
+  {
+     "img":"img/imgs/plist-img5.png",
+     "name":"Apple iPhone SE (A1723) 64G 玫瑰金色 移动联通电信4G手机",
+     "price":"￥3399.00"
+  },
+  
+  {
+     "img":"img/imgs/plist-img6.jpg",
+     "name":"苹果 Apple iPhone7 4G手机 玫瑰金 全网通(128G)",
+     "price":"￥5988.00"
+  }
+  
+
+]
